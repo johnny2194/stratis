@@ -30,6 +30,14 @@ const config = {
 	        {
 	          loader: "sass-loader" // compiles Sass to CSS
 	        }
+
+        ]
+      },
+      {
+        test: /\.(png|jpg|ttf)$/,
+        use: [
+         { loader: 'url-loader', options: { limit: 5000192 } } 
+         // limit => file.size =< 8192 bytes ? DataURI : File
         ]
       }
 		]
