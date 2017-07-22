@@ -6,24 +6,26 @@ import { render } from 'react-dom'
 import css from './styles/style.scss'
 
 // import components
-import App from './components/App'
-import Single from './components/Single'
-import PhotoGrid from './components/PhotoGrid'
+import Navigation from './components/Navigation'
+import LandingPage from './containers/LandingPage'
+import ProductsPage from './containers/ProductsPage'
+import LoginPage from './containers/LoginPage'
 
 // import react router deps
-import { Router, Route, IndexRoute, browserHistory } from 'react-router'
-import { Provider } from 'react-redux'
-import store, { history } from './store'
+import { Router, Route, IndexRoute } from 'react-router'
+import createBrowserHistory from 'history/createBrowserHistory'
+
+const history = createBrowserHistory()
 
 const router = (
-	<Provider store={store}>
 		<Router history={history}>
-			<Route path="/" component={App}>
-				<IndexRoute component={PhotoGrid}></IndexRoute>
-				<Route path="view/:postId" component={Single}></Route>
-			</Route>
+			<div>
+				<Route path="/" component={Navigation} />
+				<Route exact path="/" component={LandingPage} />
+				<Route path="/products" component={ProductsPage} />
+				<Route path="/login" component={LoginPage} />
+			</div>
 		</Router>
-	</Provider>
 )
 
-render(router, document.getElementById('root'))
+render(router, document.getElementById('app'))

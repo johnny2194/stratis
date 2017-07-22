@@ -1,12 +1,12 @@
 const config = {
-	entry: `${__dirname}/src/index.js`,
+	entry: `${__dirname}/src/stratis-snow.js`,
 	output: {
 		path: `${__dirname}/build`,
 		filename: 'bundle.js'
 	},
 	devtool: 'source-map',
 	resolve: {
-		extension: ['.js', '.jsx']
+		extensions: ['.js', '.jsx']
 	},
 	module: {
 		rules: [
@@ -35,3 +35,5 @@ const config = {
 		]
 	}
 }
+
+module.exports = config
