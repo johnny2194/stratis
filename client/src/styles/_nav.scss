@@ -1,20 +1,45 @@
+$border: solid 1px rgba(255,255,255,0.1);
+
 .navigation {
 
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background-color: rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	position: absolute;
+	height: 59px;
+	border-bottom: $border;
+	color: white;
+	width: 100%;
 
-	h1 {
 
+	div {
+		width: 20%;
+		justify-content: space-around;
+		display: flex;
+		color: blue;
 	}
 
 	ul {
-
+		display: flex;
+		width: 40%;
+		height: 100%;
+		align-items: center;
 
 
 		li {
+			text-align: center;
+			list-style: none;
+			font-height: 12px;
+			font-weight: 300;
+			width: 80px;
+			height: 100%;
+			border: {
+				left: $border;
+				right:$border;
+			}
 			&:hover {
 				
 			}
