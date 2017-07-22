@@ -28,10 +28,24 @@ const config = {
 	          loader: "css-loader" // translates CSS into CommonJS
 	        }, 
 	        {
-	          loader: "sass-loader" // compiles Sass to CSS
+	          loader: "sass-loader", // compiles Sass to CSS
+	          options: {
+	          	includePaths: [__dirname + "/build"]
+	          }
+	        },
+	        {
+	        	loader: "resolve-url-loader"
 	        }
+
         ]
-      }
+      },
+      {
+	      test: /\.(jpe?g|png|gif|svg)$/i,
+	      use: [
+	        'url-loader?limit=10000000',
+	        'img-loader'
+	      ]
+	    }
 		]
 	}
 }
