@@ -5,16 +5,20 @@ class Navigation extends React.Component {
 		return (
 			<div className="navigation">
         <ul>
-          <li>Menu</li>
+          <li className="menu fa fa-bars fa-4x"></li>
           <li>Men</li>
           <li>Women</li>
-          <li>Snow</li>
-          <li>Surf</li>
+          <li>Board</li>
+          <li className="ski">Ski</li>
         </ul>
         
-        <div>Stratis</div>
+
+        <div>
+          <span></span>
+        </div>
+
         
-        <ul>
+        <ul className="right-nav">
           <li>Login</li>
           <li>Search</li>
           <li>Bag 0</li>

@@ -22,25 +22,66 @@ $border: solid 1px rgba(255,255,255,0.1);
 		color: blue;
 	}
 
+	span {
+		display:flex;
+		height: 35px;
+		width: 170px;
+		background: {
+			image: url('../../build/images/long-logo-white.png');
+			size: cover;                
+			repeat: no-repeat;
+			position: center center;
+
+		}	
+			&:hover {
+				background-image: url('../../build/images/long-logo-blue.png');
+			}
+	}
+
 	ul {
 		display: flex;
 		width: 40%;
 		height: 100%;
-		align-items: center;
-
+	
+		&.right-nav {
+			justify-content: flex-end;
+		}
 
 		li {
-			text-align: center;
+
+			
+			text-transform: uppercase;
+			display: flex;
+			justify-content: center;
+			align-items: center; 
+			// text-align: center;
 			list-style: none;
-			font-height: 12px;
+			font-size: 12px;
 			font-weight: 300;
-			width: 80px;
+			width: 88px;
 			height: 100%;
 			border: {
 				left: $border;
-				right:$border;
+				// right:$border;
 			}
+
+			&.menu{
+				border: none;
+				width: 100px;
+
+				&:hover {
+					color: #213875;
+					background-color: rgba(255,255,255,0.0);
+					
+				}
+			}
+
+			&.ski{
+				border-right: $border;
+			}
+
 			&:hover {
+				background-color: #213875;
 				
 			}
 		}
