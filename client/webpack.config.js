@@ -28,24 +28,18 @@ const config = {
 	          loader: "css-loader" // translates CSS into CommonJS
 	        }, 
 	        {
-	          loader: "sass-loader", // compiles Sass to CSS
-	          options: {
-	          	includePaths: [__dirname + "/build"]
-	          }
-	        },
-	        {
-	        	loader: "resolve-url-loader"
+	          loader: "sass-loader" // compiles Sass to CSS
 	        }
 
         ]
       },
       {
-	      test: /\.(jpe?g|png|gif|svg)$/i,
-	      use: [
-	        'url-loader?limit=10000000',
-	        'img-loader'
-	      ]
-	    }
+        test: /\.(png|jpg|ttf)$/,
+        use: [
+         { loader: 'url-loader', options: { limit: 5000192 } } 
+         // limit => file.size =< 8192 bytes ? DataURI : File
+        ]
+      }
 		]
 	}
 }
