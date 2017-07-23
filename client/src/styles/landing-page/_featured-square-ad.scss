@@ -1,12 +1,11 @@
-$translucent-grey: rgba(10,10,10,0.5);
+$translucent-grey: rgba(10,10,10,0.4);
 
     
 .featured-square-ad {
     display: flex;
     // justify-content: space-around;
     align-items: center;
-    width: 50%;
-    height:614px;
+    width: 50%; 
     position: relative;
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
     
@@ -23,7 +22,7 @@ $translucent-grey: rgba(10,10,10,0.5);
 
     div {
         z-index: 4;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(150, 150, 150, 0.3);
         bottom: 0;
         left: 0;
         opacity: 0.5;
