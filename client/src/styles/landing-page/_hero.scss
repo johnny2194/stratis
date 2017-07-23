@@ -1,3 +1,4 @@
+$translucent-white: rgba(255,255,255,0.3);
 .hero { 
     height: 670px;
     width: 100%;
@@ -6,6 +7,31 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display:flex;
+    justify-content: space-around; 
+    flex-direction: column;
 
-
+  span { 
+    display: flex;
+    height: 80%;
+    width: 100%;
+  }
+  
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width:550px;
+    font-size: 100px;
+    font-style: montserrat;
+    font-weight: 700;
+    color: #213875;
+    padding: 30px;
+    margin: {
+      left: 160px;
+      bottom: 140px;
+    }
+    // #fc2848
+    background-color: $translucent-white;
+  }
 }
