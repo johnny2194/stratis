@@ -1,0 +1,56 @@
+
+// .square-ad-container { 
+//     // height: 400px;
+//     display:flex;
+//     width: 100px;
+//     justify-content:space-around;
+//     height:500px;
+//     border: solid 1px black;
+//     background-color: blue;
+//     positon: absolute;
+//     z-index: 100;
+
+// }
+$translucent-white: rgba(255,255,255,0.3);
+$translucent-white-lighter: rgba(255,255,255,0.5);
+.square { 
+    height: 670px;
+    width: 100%;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.18)),
+        url('../../build/images/option1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:flex;
+    justify-content: space-around; 
+    flex-direction: column;
+
+  span { 
+    display: flex;
+    height: 80%;
+    width: 100%;
+  }
+  
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width:550px;
+    font-size: 100px;
+    font-style: montserrat;
+    font-weight: 700;
+    color: #213875;
+    padding: 30px;
+    margin: {
+      left: 160px;
+      bottom: 140px;
+    }
+    // #fc2848
+    background-color: $translucent-white;
+
+        &:hover {
+         background-color: $translucent-white-lighter;
+         cursor: pointer;
+        }
+  }
+}

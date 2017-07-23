@@ -50,6 +50,17 @@ class LandingPage extends React.Component {
             <span className="p4"></span>
           </div>
         </div>
+              <div className="square">
+                <span></span>
+                <div>Sale is on!</div> 
+              </div>
+              <div className="hero">
+                <span></span>
+                <div>Sale is on!</div> 
+              </div>
+
+        
+
       </div>
 		)
 	}
