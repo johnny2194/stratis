@@ -12,11 +12,9 @@ class Navigation extends React.Component {
           <li className="ski">Ski</li>
         </ul>
         
-
         <div>
           <span></span>
         </div>
-
         
         <ul className="right-nav">
           <li>Login</li>

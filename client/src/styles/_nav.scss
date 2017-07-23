@@ -1,4 +1,5 @@
 $border: solid 1px rgba(255,255,255,0.1);
+$menu-item-hover-color: #213875;
 
 .navigation {
 
@@ -20,23 +21,25 @@ $border: solid 1px rgba(255,255,255,0.1);
 		justify-content: space-around;
 		display: flex;
 		color: blue;
-	}
 
-	span {
-		display:flex;
-		height: 35px;
-		width: 170px;
-		background: {
-			image: url('../../build/images/long-logo-white.png');
-			size: cover;                
-			repeat: no-repeat;
-			position: center center;
+		span {
+			display:flex;
+			height: 35px;
+			width: 170px;
+			background: {
+				image: url('../../build/images/long-logo-white.png');
+				size: cover;                
+				repeat: no-repeat;
+				position: center center;
+			}
+			transition: all 0.2s;
 
-		}	
 			&:hover {
 				background-image: url('../../build/images/long-logo-blue.png');
 			}
+		}
 	}
+
 
 	ul {
 		display: flex;
@@ -48,31 +51,28 @@ $border: solid 1px rgba(255,255,255,0.1);
 		}
 
 		li {
-
-			
 			text-transform: uppercase;
 			display: flex;
 			justify-content: center;
-			align-items: center; 
-			// text-align: center;
+			align-items: center;
 			list-style: none;
 			font-size: 12px;
 			font-weight: 300;
 			width: 88px;
 			height: 100%;
+			transition: all 0.2s;
 			border: {
 				left: $border;
-				// right:$border;
 			}
 
 			&.menu{
 				border: none;
 				width: 100px;
+				transition: all 0.2s;
 
 				&:hover {
-					color: #213875;
-					background-color: rgba(255,255,255,0.0);
-					
+					color: $menu-item-hover-color;
+					background-color: rgba(255,255,255,0.0);			
 				}
 			}
 
@@ -81,8 +81,7 @@ $border: solid 1px rgba(255,255,255,0.1);
 			}
 
 			&:hover {
-				background-color: #213875;
-				
+				background-color: $menu-item-hover-color;		
 			}
 		}
 	}
