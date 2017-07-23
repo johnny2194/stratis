@@ -36,8 +36,7 @@ const config = {
       {
         test: /\.(png|jpg|ttf)$/,
         use: [
-         { loader: 'url-loader', options: { limit: 5000192 } } 
-         // limit => file.size =< 8192 bytes ? DataURI : File
+         	{ loader: 'url-loader', options: { limit: 5000192 } }
         ]
       }
 		]
