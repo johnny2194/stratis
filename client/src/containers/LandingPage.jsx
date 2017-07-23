@@ -10,42 +10,11 @@ class LandingPage extends React.Component {
           <div>Sale is on!</div> 
         </div>
         <div className="product-strip">
-          <FeaturedProduct></FeaturedProduct>
-          <div>
-            <div>
-              <h1>Brand</h1>
-              <h1>Name</h1>
-              <h1>Type</h1>
-              <h1>Sizes</h1>
-              <h1>Price</h1>
-            </div>
-            <img src="/images/moment2.png"></img>
-          </div>
-          <div>
-            <div>
-              <h1>Brand</h1>
-              <h1>Name</h1>
-              <h1>Type</h1>
-              <h1>Sizes</h1>
-              <h1>Price</h1>
-            </div>
-            <img src="/images/burton2.png"></img>
-          </div>
-          <div >
-            <div>
-              <h1>Brand</h1>
-              <h1>Name</h1>
-              <h1>Type</h1>
-              <h1>Sizes</h1>
-              <h1>Price</h1>
-            </div>
-            <img src="/images/moment1.png"></img>
-          </div>
+          <FeaturedProduct image="/images/burton1.png"></FeaturedProduct>
+          <FeaturedProduct image="/images/moment2.png"></FeaturedProduct>
+          <FeaturedProduct image="/images/burton2.png"></FeaturedProduct>
+          <FeaturedProduct image="/images/moment1.png"></FeaturedProduct>
         </div>
-  
-
-        
-
       </div>
 		)
 	}

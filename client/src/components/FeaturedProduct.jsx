@@ -11,7 +11,7 @@ class FeaturedProduct extends React.Component {
            <h1>Sizes</h1>
            <h1>Price</h1>
          </div>
-         <img src="/images/burton1.png"></img>
+         <img src={this.props.image}></img>
       </div>
 		)
 	}
