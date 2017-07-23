@@ -12,7 +12,7 @@ $translucent-grey: rgba(50,50,50,0.5);
         justify-content: space-around;
         align-items: center;
         width: 25%;
-        // height:360px;
+        height:360px;
         position: relative;
         
 
@@ -44,34 +44,9 @@ $translucent-grey: rgba(50,50,50,0.5);
                 
             }
         }
-
-        span {
-            z-index: 1;
-            display:flex;
-            height: 358px;
-            width: 180px;
-            background: {
-                size: cover;                
-                repeat: no-repeat;
-                position: center;
-            }   
-            &.p1 {
-                background-image: url('../../build/images/burton1.png');
-            }
-            &.p2 {
-                background-image: url('../../build/images/moment2.png');
-                height: 350px;
-                margin-top: 7px;
-
-            }
-            &.p3 {
-                background-image: url('../../build/images/burton2.png');
-            }
-            &.p4 {
-                background-image: url('../../build/images/moment1.png');
-                height: 350px;
-                margin-top: 7px;
-            }
+        
+        img {
+            height: 100%;
         }
     }
 }

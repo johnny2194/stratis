@@ -1,0 +1,45 @@
+$translucent-grey: rgba(50,50,50,0.5);
+
+    
+.featured-product {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+    height:360px;
+    position: relative;
+    
+
+    div {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        color: transparent;
+        z-index: 5;
+        position: absolute;
+        transition: all 0.15s;
+        padding: {
+        top: 30px;
+        bottom: 30px;
+        }
+
+        h1 {
+            font-size: 23px;
+            font-weight: 300;
+        }
+        &:hover {
+            background-color: $translucent-grey;
+            color: white;
+
+            
+        }
+    }
+    
+    img {
+        height: 100%;
+    }
+}

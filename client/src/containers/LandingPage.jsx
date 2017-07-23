@@ -1,4 +1,5 @@
 import React from 'react'
+import FeaturedProduct from '../components/FeaturedProduct'
 
 class LandingPage extends React.Component {
 	render() {
@@ -9,6 +10,7 @@ class LandingPage extends React.Component {
           <div>Sale is on!</div> 
         </div>
         <div className="product-strip">
+          <FeaturedProduct></FeaturedProduct>
           <div>
             <div>
               <h1>Brand</h1>
@@ -17,7 +19,7 @@ class LandingPage extends React.Component {
               <h1>Sizes</h1>
               <h1>Price</h1>
             </div>
-            <span className="p1"></span>
+            <img src="/images/moment2.png"></img>
           </div>
           <div>
             <div>
@@ -27,17 +29,7 @@ class LandingPage extends React.Component {
               <h1>Sizes</h1>
               <h1>Price</h1>
             </div>
-            <span className="p2"></span>
-          </div>
-          <div>
-            <div>
-              <h1>Brand</h1>
-              <h1>Name</h1>
-              <h1>Type</h1>
-              <h1>Sizes</h1>
-              <h1>Price</h1>
-            </div>
-            <span className="p3"></span>
+            <img src="/images/burton2.png"></img>
           </div>
           <div >
             <div>
@@ -47,17 +39,10 @@ class LandingPage extends React.Component {
               <h1>Sizes</h1>
               <h1>Price</h1>
             </div>
-            <span className="p4"></span>
+            <img src="/images/moment1.png"></img>
           </div>
         </div>
-              <div className="square">
-                <span></span>
-                <div>Sale is on!</div> 
-              </div>
-              <div className="hero">
-                <span></span>
-                <div>Sale is on!</div> 
-              </div>
+  
 
         
 
