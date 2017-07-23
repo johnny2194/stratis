@@ -1,4 +1,6 @@
 import React from 'react'
+import FeaturedProduct from '../components/FeaturedProduct'
+import FeaturedSquareAd from '../components/FeaturedSquareAd'
 
 class LandingPage extends React.Component {
 	render() {
@@ -9,46 +11,24 @@ class LandingPage extends React.Component {
           <div>Sale is on!</div> 
         </div>
         <div className="product-strip">
-          <div>
-            <div>
-              <h1>Brand</h1>
-              <h1>Name</h1>
-              <h1>Type</h1>
-              <h1>Sizes</h1>
-              <h1>Price</h1>
-            </div>
-            <span className="p1"></span>
-          </div>
-          <div>
-            <div>
-              <h1>Brand</h1>
-              <h1>Name</h1>
-              <h1>Type</h1>
-              <h1>Sizes</h1>
-              <h1>Price</h1>
-            </div>
-            <span className="p2"></span>
-          </div>
-          <div>
-            <div>
-              <h1>Brand</h1>
-              <h1>Name</h1>
-              <h1>Type</h1>
-              <h1>Sizes</h1>
-              <h1>Price</h1>
-            </div>
-            <span className="p3"></span>
-          </div>
-          <div >
-            <div>
-              <h1>Brand</h1>
-              <h1>Name</h1>
-              <h1>Type</h1>
-              <h1>Sizes</h1>
-              <h1>Price</h1>
-            </div>
-            <span className="p4"></span>
-          </div>
+          <FeaturedProduct image="/images/burton1.png"></FeaturedProduct>
+          <FeaturedProduct image="/images/moment2.png"></FeaturedProduct>
+          <FeaturedProduct image="/images/burton2.png"></FeaturedProduct>
+          <FeaturedProduct image="/images/moment1.png"></FeaturedProduct>
+        </div>
+        <div className="square-ad-strip">
+          <FeaturedSquareAd image="/images/momentski.jpg"></FeaturedSquareAd>
+          <FeaturedSquareAd image="/images/ballin2.jpg"></FeaturedSquareAd>
+        </div>
+        <div className="product-strip">
+          <FeaturedProduct image="/images/burton1.png"></FeaturedProduct>
+          <FeaturedProduct image="/images/moment2.png"></FeaturedProduct>
+          <FeaturedProduct image="/images/burton2.png"></FeaturedProduct>
+          <FeaturedProduct image="/images/moment1.png"></FeaturedProduct>
+        </div>
+        {/* <div className="sale-collection">
+        </div>*/}
+        <div className="footer">
         </div>
       </div>
 		)
