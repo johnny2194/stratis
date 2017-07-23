@@ -10,15 +10,43 @@ class LandingPage extends React.Component {
         </div>
         <div className="product-strip">
           <div>
+            <div>
+              <h1>Brand</h1>
+              <h1>Name</h1>
+              <h1>Type</h1>
+              <h1>Sizes</h1>
+              <h1>Price</h1>
+            </div>
             <span className="p1"></span>
           </div>
           <div>
-           <span className="p2"></span>
+            <div>
+              <h1>Brand</h1>
+              <h1>Name</h1>
+              <h1>Type</h1>
+              <h1>Sizes</h1>
+              <h1>Price</h1>
+            </div>
+            <span className="p2"></span>
           </div>
           <div>
+            <div>
+              <h1>Brand</h1>
+              <h1>Name</h1>
+              <h1>Type</h1>
+              <h1>Sizes</h1>
+              <h1>Price</h1>
+            </div>
             <span className="p3"></span>
           </div>
           <div >
+            <div>
+              <h1>Brand</h1>
+              <h1>Name</h1>
+              <h1>Type</h1>
+              <h1>Sizes</h1>
+              <h1>Price</h1>
+            </div>
             <span className="p4"></span>
           </div>
         </div>
