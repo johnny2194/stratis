@@ -1,4 +1,5 @@
 $translucent-white: rgba(255,255,255,0.3);
+$translucent-white-lighter: rgba(255,255,255,0.5);
 .hero { 
     height: 670px;
     width: 100%;
@@ -33,5 +34,10 @@ $translucent-white: rgba(255,255,255,0.3);
     }
     // #fc2848
     background-color: $translucent-white;
+
+        &:hover {
+         background-color: $translucent-white-lighter;
+         cursor: pointer;
+        }
   }
 }

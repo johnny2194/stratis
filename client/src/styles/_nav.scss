@@ -36,6 +36,7 @@ $menu-item-hover-color: #213875;
 
 			&:hover {
 				background-image: url('../../build/images/long-logo-blue.png');
+				cursor: pointer;
 			}
 		}
 	}
@@ -72,7 +73,8 @@ $menu-item-hover-color: #213875;
 
 				&:hover {
 					color: $menu-item-hover-color;
-					background-color: rgba(255,255,255,0.0);			
+					background-color: rgba(255,255,255,0.0);
+					cursor: pointer;			
 				}
 			}
 
@@ -81,7 +83,8 @@ $menu-item-hover-color: #213875;
 			}
 
 			&:hover {
-				background-color: $menu-item-hover-color;		
+				background-color: $menu-item-hover-color;	
+				cursor: pointer;	
 			}
 		}
 	}
