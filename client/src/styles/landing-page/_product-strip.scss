@@ -1,0 +1,47 @@
+.product-strip { 
+    width: 100%;
+    height: 400px;
+    display:flex;
+    justify-contents:space-around;
+    background-color: #f6f6f6;
+    
+    div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 25%;
+        height:360px;
+        // border: 1px solid blue;
+
+
+        span {
+            display:flex;
+            height: 358px;
+            width: 180px;
+            background: {
+                size: cover;                
+                repeat: no-repeat;
+                position: center;
+            }   
+            &.p1 {
+                background-image: url('../../build/images/burton1.png');
+            }
+            &.p2 {
+                background-image: url('../../build/images/moment2.png');
+                height: 350px;
+                margin-top: 7px;
+
+            }
+            &.p3 {
+                background-image: url('../../build/images/burton2.png');
+            }
+            &.p4 {
+                background-image: url('../../build/images/moment1.png');
+                height: 350px;
+                margin-top: 7px;
+                
+
+            }
+        }
+    }
+}

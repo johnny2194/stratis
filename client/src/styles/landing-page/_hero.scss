@@ -1,3 +1,4 @@
+$translucent-white: rgba(255,255,255,0.3);
 .hero { 
     height: 670px;
     width: 100%;
@@ -16,17 +17,21 @@
     width: 100%;
   }
   
-  p {
+  div {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width:550px;
     font-size: 100px;
     font-style: montserrat;
     font-weight: 700;
     color: #213875;
+    padding: 50px;
     margin: {
       left: 160px;
       bottom: 140px;
     }
     // #fc2848
-    // background-color: blue;
+    background-color: $translucent-white;
   }
 }
