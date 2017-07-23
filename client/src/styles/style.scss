@@ -1,10 +1,10 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-
+  font-family: 'Raleway', sans-serif;
 }
+@import './_nav.scss', './landing-page/_hero.scss', url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'), url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900')
 
-@import './_nav.scss', './landing-page/_hero.scss', url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
 

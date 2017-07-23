@@ -6,6 +6,27 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display:flex;
+    justify-content: space-around; 
+    flex-direction: column;
 
-
+  span { 
+    display: flex;
+    height: 80%;
+    width: 100%;
+  }
+  
+  p {
+    display: flex;
+    font-size: 100px;
+    font-style: montserrat;
+    font-weight: 700;
+    color: #213875;
+    margin: {
+      left: 160px;
+      bottom: 140px;
+    }
+    // #fc2848
+    // background-color: blue;
+  }
 }
