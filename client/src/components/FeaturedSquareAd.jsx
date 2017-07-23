@@ -1,9 +1,10 @@
 import React from 'react'
 
-class FeaturedProduct extends React.Component {
+class FeaturedSquareAd extends React.Component {
 	render() {
 		return (
-			<div className="featured-product">
+			<div className="featured-square-ad">
+          <div></div>
          <ul>
            <li>Brand</li>
            <li>Name</li>
@@ -17,4 +18,4 @@ class FeaturedProduct extends React.Component {
 	}
 }
 
-export default FeaturedProduct
+export default FeaturedSquareAd
