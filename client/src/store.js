@@ -1,10 +1,15 @@
-import { createStore } from 'redux'
-import { syncHistoryWithStore } from 'react-router-redux'
-import { createBrowserHistory } from 'history/createBrowserHistory'
+import { createStore, applyMiddleware } from 'redux'
+import createHistory from 'history/createBrowserHistory'
+
+import { routerMiddleware } from 'react-router-redux'
 
 import rootReducer from './reducers/index'
 
-const browserHistory = createBrowserHistory()
+const history = createHistory()
+
+const middleware = routerMiddleware(history)
+
+export {history}
 
 const defaultState = {
   navigation: { 
@@ -14,8 +19,7 @@ const defaultState = {
   }
 }
 
-const store = createStore(rootReducer, defaultState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+const store = createStore(rootReducer, defaultState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(), applyMiddleware(middleware))
 
-export const history = syncHistoryWithStore(browserHistory, store)
 
 export default store
