@@ -7,10 +7,12 @@ import Basket from './basket'
 
 class Navigation extends React.Component {
 	render() {
-    const basket = this.props.basketVisible ? <Basket /> : ''
+    const basket = this.props.basketVisible ? <Basket toggleBasket={this.props.toggleBasket}/> : ''
     const basketMenuItemText = this.props.basketVisible ? 'Close' : 'Bag 0'
+
+    const navStyling = this.props.basketVisible ? "navigation invert" : 'navigation'
 		return (
-			<div className="navigation">
+			<div className={navStyling}>
         <ul>
           <li className="menu fa fa-bars fa-4x"></li>
           <li>Men</li>
