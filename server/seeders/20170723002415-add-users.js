@@ -11,15 +11,15 @@ module.exports = {
       {
         first_name: 'Eoghan',
         last_name: 'Crowley',
-        email: 'eoghan@email.com',
+        email: 'eoghanscrowley@gmail.com',
         password: '123dogs',
         gender: 'male',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        first_name: 'Bob',
-        last_name: 'Peterson',
+        first_name: 'Johnny',
+        last_name: 'Watson',
         email: 'bobbyp@email.com',
         password: 'bobby1962',
         gender: 'male',

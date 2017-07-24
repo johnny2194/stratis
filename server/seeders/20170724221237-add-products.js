@@ -11,6 +11,123 @@ module.exports = {
         brand: 'Stratis-skis',
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        name: 'Sick Skis',
+        category: 'Skis',
+        type: 'fast ones',
+        gender: 'male',
+        brand: 'Stratis-skis',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Sick Skis',
+        category: 'Skis',
+        type: 'fast ones',
+        gender: 'male',
+        brand: 'Stratis-skis',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Sick Skis',
+        category: 'Skis',
+        type: 'fast ones',
+        gender: 'male',
+        brand: 'Stratis-skis',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Sick Skis',
+        category: 'Skis',
+        type: 'fast ones',
+        gender: 'male',
+        brand: 'Stratis-skis',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Sick Skis',
+        category: 'Skis',
+        type: 'fast ones',
+        gender: 'male',
+        brand: 'Stratis-skis',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Sick Skis',
+        category: 'Skis',
+        type: 'fast ones',
+        gender: 'male',
+        brand: 'Stratis-skis',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Sick Skis',
+        category: 'Skis',
+        type: 'fast ones',
+        gender: 'male',
+        brand: 'Stratis-skis',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Sick Skis',
+        category: 'Skis',
+        type: 'fast ones',
+        gender: 'male',
+        brand: 'Stratis-skis',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Sick Skis',
+        category: 'Skis',
+        type: 'fast ones',
+        gender: 'male',
+        brand: 'Stratis-skis',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Sick Skis',
+        category: 'Skis',
+        type: 'fast ones',
+        gender: 'male',
+        brand: 'Stratis-skis',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Sick Skis',
+        category: 'Skis',
+        type: 'fast ones',
+        gender: 'male',
+        brand: 'Stratis-skis',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Sick Skis',
+        category: 'Skis',
+        type: 'fast ones',
+        gender: 'male',
+        brand: 'Stratis-skis',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Sick Skis',
+        category: 'Skis',
+        type: 'fast ones',
+        gender: 'male',
+        brand: 'Stratis-skis',
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
     ], {});
   },
