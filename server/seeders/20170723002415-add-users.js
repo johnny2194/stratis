@@ -3,39 +3,39 @@
 module.exports = {
   up: function (queryInterface, Sequelize) {
     
-      // Add altering commands here.
-      // Return a promise to correctly handle asynchronicity.
+    // Add altering commands here.
+    // Return a promise to correctly handle asynchronicity.
 
-      // Example:
-      return queryInterface.bulkInsert('Users', [
-        {
-          first_name: 'Eoghan',
-          last_name: 'Crowley',
-          email: 'eoghan@email.com',
-          password: '123dogs',
-          gender: 'male',
-          createdAt: new Date(),
-          updatedAt: new Date()
-        },
-        {
-          first_name: 'Bob',
-          last_name: 'Peterson',
-          email: 'bobbyp@email.com',
-          password: 'bobby1962',
-          gender: 'male',
-          createdAt: new Date(),
-          updatedAt: new Date()
-        },
-        {
-          first_name: 'Sue',
-          last_name: 'Davies',
-          email: 'sdavies@email.com',
-          password: 'sd1985',
-          gender: 'female',
-          createdAt: new Date(),
-          updatedAt: new Date()
-        }
-      ], {});
+    // Example:
+    return queryInterface.bulkInsert('Users', [
+      {
+        first_name: 'Eoghan',
+        last_name: 'Crowley',
+        email: 'eoghan@email.com',
+        password: '123dogs',
+        gender: 'male',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        first_name: 'Bob',
+        last_name: 'Peterson',
+        email: 'bobbyp@email.com',
+        password: 'bobby1962',
+        gender: 'male',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        first_name: 'Sue',
+        last_name: 'Davies',
+        email: 'sdavies@email.com',
+        password: 'sd1985',
+        gender: 'female',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }
+    ], {});
     
   },
 
