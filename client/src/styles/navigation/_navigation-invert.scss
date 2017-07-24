@@ -1,0 +1,47 @@
+$border: solid 1px #dee1ea;
+$main-blue: #213875;
+$invert-white: #ffffff; 
+
+.navigation-invert {
+
+  color: $main-blue;
+  background-color: $invert-white;
+  border-bottom: $border;
+
+  
+
+  div {
+    
+    span {
+
+      background-image: url('../../build/images/long-logo-blue.png') !important;
+    }
+  }
+
+
+  ul {
+  
+    &.right-nav {
+    }
+
+    li {
+      border: {
+        left: $border;
+      }
+
+      &.menu{
+
+        &:hover {
+          color: $main-blue;
+          background-color: rgba(255,255,255,0.0);    
+        }
+      }
+
+      &.ski{
+        border-right: $border;
+
+      }
+
+    }
+  }
+}

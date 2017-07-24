@@ -10,14 +10,14 @@ class Navigation extends React.Component {
     const basket = this.props.basketVisible ? <Basket toggleBasket={this.props.toggleBasket}/> : ''
     const basketMenuItemText = this.props.basketVisible ? 'Close' : 'Bag 0'
 
-    const navStyling = this.props.basketVisible ? "navigation invert" : 'navigation'
+    const navStyling = this.props.basketVisible ? "navigation navigation-invert" : 'navigation'
 		return (
 			<div className={navStyling}>
         <ul>
           <li className="menu fa fa-bars fa-4x"></li>
-          <li>Men</li>
-          <li>Women</li>
-          <li>Board</li>
+          <li className="men">Men</li>
+          <li className="women">Women</li>
+          <li className="board">Board</li>
           <li className="ski">Ski</li>
         </ul>
         
@@ -26,7 +26,7 @@ class Navigation extends React.Component {
         </div>
         
         <ul className="right-nav">
-          <li>Login</li>
+          <li className="login">Login</li>
           <li>Search</li>
           <li onClick={this.props.toggleBasket}>{basketMenuItemText}</li>
         </ul>
