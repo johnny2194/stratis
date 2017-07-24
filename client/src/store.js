@@ -15,7 +15,8 @@ const defaultState = {
   navigation: { 
     basketVisible: false,
     menuVisible: false,
-    currentHoverDropdown: ""
+    currentHoverDropdown: "",
+    styling: "navigation"
   }
 }
 

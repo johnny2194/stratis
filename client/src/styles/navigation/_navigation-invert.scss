@@ -37,9 +37,12 @@ $invert-white: #ffffff;
         }
       }
 
-      &.ski{
-        border-right: $border;
+      &.login:hover{
+        border-bottom: solid 1px $invert-white;    
+      }
 
+      &.ski{
+        border-right: $border !important;
       }
 
     }

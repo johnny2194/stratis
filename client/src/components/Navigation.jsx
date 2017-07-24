@@ -2,17 +2,32 @@ import React from 'react'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import * as actionCreators from '../actions/navigationActionCreators'
+import {Link} from 'react-router-dom'
 
 import Basket from './basket'
 
 class Navigation extends React.Component {
+  componentWillMount() {
+    if (this.props.initialStyling) this.props.changeStyling(this.props.initialStyling)
+  }
+
 	render() {
     const basket = this.props.basketVisible ? <Basket toggleBasket={this.props.toggleBasket}/> : ''
     const basketMenuItemText = this.props.basketVisible ? 'Close' : 'Bag 0'
 
-    const navStyling = this.props.basketVisible ? "navigation navigation-invert" : 'navigation'
+    
+    const handleToggleBasket = () => {
+      this.props.toggleBasket()
+      if (this.props.initialStyling !== 'navigation navigation-invert') {
+        const styling = this.props.styling == 'navigation' ? 'navigation navigation-invert' : 'navigation'
+        this.props.changeStyling(styling)
+      }
+    }
+
+
+
 		return (
-			<div className={navStyling}>
+			<div className={this.props.styling}>
         <ul>
           <li className="menu fa fa-bars fa-4x"></li>
           <li className="men">Men</li>
@@ -22,13 +37,15 @@ class Navigation extends React.Component {
         </ul>
         
         <div>
-          <span></span>
+          <Link to="/">
+            <span></span>
+          </Link>
         </div>
         
         <ul className="right-nav">
           <li className="login">Login</li>
           <li>Search</li>
-          <li onClick={this.props.toggleBasket}>{basketMenuItemText}</li>
+          <li onClick={handleToggleBasket}>{basketMenuItemText}</li>
         </ul>
 
         {basket}
