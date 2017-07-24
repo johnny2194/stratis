@@ -1,7 +1,14 @@
 import React from 'react'
+import {bindActionCreators} from 'redux'
+import {connect} from 'react-redux'
+import * as actionCreators from '../actions/navigationActionCreators'
+
+import Basket from './basket'
 
 class Navigation extends React.Component {
 	render() {
+    const basket = this.props.basketVisible ? <Basket /> : ''
+    const basketMenuItemText = this.props.basketVisible ? 'Close' : 'Bag 0'
 		return (
 			<div className="navigation">
         <ul>
@@ -19,11 +26,24 @@ class Navigation extends React.Component {
         <ul className="right-nav">
           <li>Login</li>
           <li>Search</li>
-          <li>Bag 0</li>
+          <li onClick={this.props.toggleBasket}>{basketMenuItemText}</li>
         </ul>
+
+        {basket}
       </div>
 		)
 	}
 }
 
-export default Navigation
+
+// this is taking the navigation portion of state and attaching it to the Navigation's props
+function mapStateToProps(state) {
+  return state.navigation
+}
+
+// this is attaching our actions to the Navigation component
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(actionCreators, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Navigation)

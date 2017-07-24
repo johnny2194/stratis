@@ -9,11 +9,13 @@ $main-blue: #213875;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	position: absolute;
+	position: fixed;
+	top: 0;
 	height: 59px;
 	border-bottom: $border;
 	color: white;
 	width: 100%;
+	z-index: 3;
 
 
 	div {

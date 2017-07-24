@@ -1,6 +1,6 @@
 //basket
-export function showBasket() {
+export function toggleBasket() {
   return {
-    type: "SHOW_BASKET"
+    type: "TOGGLE_BASKET"
   }
 }
