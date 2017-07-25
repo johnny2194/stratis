@@ -6,7 +6,7 @@ module.exports = {
       {
         quantity: 1,
         orderId: 1,
-        productId: 1,
+        stock_detailsId: 1,
         createdAt: new Date(),
         updatedAt: new Date()
       }

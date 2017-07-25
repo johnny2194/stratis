@@ -1,4 +1,6 @@
 'use strict';
+const models = require('./index')
+
 module.exports = function(sequelize, DataTypes) {
   var Product = sequelize.define('Product', {
     name: {

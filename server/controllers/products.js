@@ -1,4 +1,10 @@
-var Product = require('../models').Product
+const Product = require('../models').Product
+const models = require('../models')
+
+Product.hasMany(models.Stock_details, {
+  foreignKey: 'productId',
+  as: 'stock_details'
+})
 
 module.exports = {
   create(req, res) {
@@ -15,13 +21,23 @@ module.exports = {
   },
   index(req, res) {
     return Product
-      .findAll()
+      .findAll({
+        include: [{
+          model: models.Stock_details,
+          as: 'stock_details'
+        }]
+      })
       .then(products => res.status(200).send(products))
       .catch(error => res.status(400).send(error));
   },
   show(req, res) {
     return Product
-      .findById(req.params.productId)
+      .findById(req.params.productId, {
+        include: [{
+          model: models.Stock_details,
+          as: 'stock_details'
+        }]
+      })
       .then(product => res.status(200).send(product))
       .catch(error => res.status(400).send(error))
   },

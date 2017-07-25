@@ -1,4 +1,6 @@
 'use strict';
+const models = require('./index')
+
 module.exports = function(sequelize, DataTypes) {
   var Purchase = sequelize.define('Purchase', {
     quantity: {
@@ -9,7 +11,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       allowNull: false
     },
-    productId: {
+    stock_detailsId: {
       type: DataTypes.INTEGER,
       allowNull: false
     }

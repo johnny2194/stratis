@@ -10,11 +10,23 @@ module.exports = {
       },
       productId: {
         type: Sequelize.INTEGER,
-        allowNull: false
+        allowNull: false,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'Products',
+          as: 'product',
+          key: 'id'
+        },
       },
       userId: {
         type: Sequelize.INTEGER,
-        allowNull: false
+        allowNull: false,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'Users',
+          as: 'user',
+          key: 'id'
+        }
       },
       comment: {
         type: Sequelize.STRING,

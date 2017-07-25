@@ -1,4 +1,6 @@
 'use strict';
+const models = require('./index')
+
 module.exports = function(sequelize, DataTypes) {
   var Shipping_details = sequelize.define('Shipping_details', {
     first_line: {
@@ -27,5 +29,6 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   });
+
   return Shipping_details;
 };

@@ -1,4 +1,6 @@
 'use strict';
+const models = require('./index')
+
 module.exports = function(sequelize, DataTypes) {
   var Order = sequelize.define('Order', {
     userId: {
@@ -12,5 +14,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   });
+  
+
   return Order;
 };
