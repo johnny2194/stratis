@@ -28,7 +28,11 @@ module.exports = {
       .findAll({
         include: [{
           model: models.Order,
-          as: 'orders'
+          as: 'orders',
+          include: [{
+            model: models.Purchase,
+            as: 'purchases'
+          }]
         }]
       })
       .then(users => res.status(200).send(users))
@@ -39,7 +43,11 @@ module.exports = {
       .findById(req.params.userId, {
         include: [{
           model: models.Order,
-          as: 'orders'
+          as: 'orders',
+          include: [{
+            model: models.Purchase,
+            as: 'purchases'
+          }]
         }]
       })
       .then(user => res.status(200).send(user))

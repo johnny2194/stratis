@@ -1,6 +1,15 @@
 const Stock_details = require('../models').Stock_details
 const models = require('../models')
 
+Stock_details.belongsTo(models.Product, {
+  foreignKey: 'productId',
+  as: 'product'
+})
+Stock_details.hasMany(models.Purchase, {
+  foreignKey: 'stock_detailsId',
+  as: 'purchase'
+})
+
 module.exports = {
   create(req, res) {
     return Stock_details
@@ -17,13 +26,23 @@ module.exports = {
   },
   index(req, res) {
     return Stock_details
-      .findAll()
+      .findAll({
+        include: [{
+          model: models.Product,
+          as: 'product'
+        }]
+      })
       .then(products => res.status(200).send(products))
       .catch(error => res.status(400).send(error));
   },
   show(req, res) {
     return Stock_details
-      .findById(req.params.stock_detailsId)
+      .findById(req.params.stock_detailsId, {
+        include: [{
+          model: models.Product,
+          as: 'product'
+        }]
+      })
       .then(stock_details => res.status(200).send(stock_details))
       .catch(error => res.status(400).send(error))
   },

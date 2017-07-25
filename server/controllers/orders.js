@@ -21,13 +21,23 @@ module.exports = {
   },
   index(req, res) {
     return Order
-      .findAll()
+      .findAll({
+        include: [{
+          model: models.Purchase,
+          as: 'purchases'
+        }]
+      })
       .then(orders => res.status(200).send(orders))
       .catch(error => res.status(400).send(error));
   },
   show(req, res) {
     return Order
-      .findById(req.params.orderId)
+      .findById(req.params.orderId, {
+        include: [{
+          model: models.Purchase,
+          as: 'purchases'
+        }]
+      })
       .then(order => res.status(200).send(order))
       .catch(error => res.status(400).send(error))
   },

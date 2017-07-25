@@ -22,13 +22,13 @@ module.exports = {
           key: 'id'
         }
       },
-      productId: {
+      stock_detailsId: {
         type: Sequelize.INTEGER,
         allowNull: false,
         onDelete: 'CASCADE',
         references: {
-          model: 'Products',
-          as: 'product',
+          model: 'Stock_details',
+          as: 'stock_details',
           key: 'id'
         }
       },
