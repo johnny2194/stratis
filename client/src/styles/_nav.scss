@@ -108,7 +108,7 @@ $ski-color: #f4e3d9;
 				}
 			}
 
-			&.men:hover{
+			&.men.active{
 					background-color: $mens-color;
 					border-bottom: 1px solid $mens-color;	
 					color: $main-blue;
@@ -117,7 +117,7 @@ $ski-color: #f4e3d9;
 
 			}
 
-			&.women:hover{
+			&.women.active{
 					background-color: $womens-color;	
 					border-bottom: 1px solid $womens-color;
 					color: $main-blue;
@@ -126,7 +126,7 @@ $ski-color: #f4e3d9;
 
 			}
 
-			&.board:hover{
+			&.board.active{
 					background-color: $board-color;	
 					border-bottom: 1px solid $board-color;
 					color: $main-blue;
@@ -137,7 +137,7 @@ $ski-color: #f4e3d9;
 			&.ski{
 				border-right: $border;
 
-				&:hover {
+				&.active {
 					background-color: #FFE8AA;
 					color: $main-blue;
       		font-weight: 600;

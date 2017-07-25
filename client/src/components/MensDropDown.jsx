@@ -12,9 +12,6 @@ class MensDropDown extends React.Component {
   }
 
   componentDidMount() {
-    const dropdownBackground = this.refs['dropdown-background']
-
-    dropdownBackground.addEventListener('mouseenter', this.handleHideDropdown)
   }
 
   componentWillUnmount() {
@@ -31,7 +28,7 @@ class MensDropDown extends React.Component {
     return (
       <div className="mens-drop-down">
         <div className="menu"></div>
-        <div ref="dropdown-background"></div>
+        <div ref="dropdown-background" onMouseEnter={this.handleHideDropdown.bind(this)}></div>
         
       </div>
     )
