@@ -45,7 +45,7 @@ class Navigation extends React.Component {
         <ul className="right-nav">
           <li className="login">Login</li>
           <li>Search</li>
-          <li onClick={handleToggleBasket}>{basketMenuItemText}</li>
+          <li className="bag"onClick={handleToggleBasket}>{basketMenuItemText}</li>
         </ul>
 
         {basket}

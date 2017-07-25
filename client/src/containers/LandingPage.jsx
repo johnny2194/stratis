@@ -15,7 +15,7 @@ class LandingPage extends React.Component {
   componentDidMount() {
     window.addEventListener('scroll', (event) => {
       console.log(window.scrollY)
-      if (window.scrollY > 326 && window.scrollY < 1040) {
+      if (window.scrollY > 326 && window.scrollY < 1040) {  //
         this.props.changeStyling('navigation navigation-invert')
       } else {
         this.props.changeStyling('navigation')
@@ -57,10 +57,10 @@ class LandingPage extends React.Component {
           <FeaturedSquareAd image="/images/ballin2.jpg"></FeaturedSquareAd>
         </div>
         <div className="product-strip">
-          <FeaturedProduct image="/images/burton1.png"></FeaturedProduct>
-          <FeaturedProduct image="/images/moment2.png"></FeaturedProduct>
-          <FeaturedProduct image="/images/burton2.png"></FeaturedProduct>
-          <FeaturedProduct image="/images/moment1.png"></FeaturedProduct>
+          <FeaturedProduct image="/images/Belafonte.png"></FeaturedProduct>
+          <FeaturedProduct image="/images/BurtonDejaVu.jpeg"></FeaturedProduct>
+          <FeaturedProduct image="/images/HotMessSki.png"></FeaturedProduct>
+          <FeaturedProduct image="/images/BurtonDayTrader.png"></FeaturedProduct>
         </div>
         {/* <div className="sale-collection">
         </div>*/}

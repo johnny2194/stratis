@@ -10,6 +10,7 @@ import Navigation from './components/Navigation'
 import LandingPage from './containers/LandingPage'
 import ProductsPage from './containers/ProductsPage'
 import LoginPage from './containers/LoginPage'
+import TestPage from './containers/TestPage'
 
 // import react router deps
 import { Router, Route } from 'react-router'
@@ -25,7 +26,8 @@ const router = (
 			<div>
 				<Route exact path="/" component={LandingPage} />
 				<Route path="/products" component={ProductsPage} />
-				<Route path="/login" component={LoginPage} />
+        <Route path="/login" component={LoginPage} />
+				<Route path="/test" component={TestPage} />
 			</div>
 		</Router>
   </Provider>

@@ -6,15 +6,17 @@ $invert-white: #ffffff;
 
   color: $main-blue;
   background-color: $invert-white;
-  border-bottom: $border;
 
   
 
   div {
+      border-bottom: $border;
+
     
     span {
 
       background-image: url('../../build/images/long-logo-blue.png') !important;
+
     }
   }
 
@@ -25,11 +27,20 @@ $invert-white: #ffffff;
     }
 
     li {
+      font-weight: 500;
       border: {
         left: $border;
+      bottom: $border;
+
       }
 
       &.menu{
+      border-bottom: $border;
+      font-weight: 500;
+
+
+
+
 
         &:hover {
           color: $main-blue;
