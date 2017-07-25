@@ -486,6 +486,72 @@ module.exports = {
         image: "images/BurtonWomensStratusPantBrown.png",
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        color: 'Maroon / Blue',
+        size: '145',
+        price: 415,
+        stock_level: 5,
+        productId: 8,
+        discount: null,
+        image: "images/BurtonDayTrader.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Maroon / Blue',
+        size: '150',
+        price: 415,
+        stock_level: 5,
+        productId: 8,
+        discount: null,
+        image: "images/BurtonDayTrader.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Multi',
+        size: '138',
+        price: 325,
+        stock_level: 5,
+        productId: 9,
+        discount: null,
+        image: "images/BurtonDejaVu.jpeg",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Multi',
+        size: '141',
+        price: 325,
+        stock_level: 5,
+        productId: 9,
+        discount: null,
+        image: "images/BurtonDejaVu.jpeg",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Multi',
+        size: '146',
+        price: 325,
+        stock_level: 5,
+        productId: 9,
+        discount: null,
+        image: "images/BurtonDejaVu.jpeg",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Multi',
+        size: '149',
+        price: 325,
+        stock_level: 5,
+        productId: 9,
+        discount: null,
+        image: "images/BurtonDejaVu.jpeg",
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
       
     ], {});
