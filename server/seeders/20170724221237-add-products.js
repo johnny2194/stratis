@@ -8,7 +8,7 @@ module.exports = {
         category: 'Snowboard',
         productCategory: 'Board',
         type: 'All Mountain',
-        gender: 'Male',
+        gender: 'Mens',
         brand: 'Burton',
         Description:  "Backed by gold, and designed by Shaun White – get the snap, control, and response to propel your skills forward.   One look under the hood tells you Shaun White’s TWC Pro is revved up and ready to perform alchemy on all-terrain. In superpipes and slopestyle courses around the world, and every condition in between, camber delivers the snappy and stable suspension that White’s riding demands. Frostbite Edges eat up bulletproof ice, while the WFO base accelerates past the competition. Similar to the Custom but with a more responsive shape, the TWC Pro is the logical next step for riders ready to upgrade their game."
         createdAt: new Date(),
@@ -30,7 +30,7 @@ module.exports = {
         category: 'Snowboard',
         productCategory: 'Board',
         type: 'Backcountry',
-        gender: 'Male',
+        gender: 'Mens',
         brand: 'Burton',
         Description:  "Lead the charge on the way up or down with the splitboard edition of the most trusted all-terrain board in history.  When a snowboard gets this iconic, it’s understandable that it might develop a split personality. Luckily for the Custom, it’s spent the last two decades pushing the standard of what an all-mountain board can do, defying time and picking up legions of supporters and imitators. It was only a matter of time before the demand rose for the same all-terrain prowess in the form of a splitboard. Without a doubt the most versatile board ever built, with the Burton Custom Split you can put two feet forward towards a new world of self-propelled ascents and untracked adventures."
         createdAt: new Date(),
@@ -55,6 +55,17 @@ module.exports = {
         gender: 'Unisex',
         brand: 'Burton',
         Description:  "The team’s favorite blends Burton’s top technologies with a freestyle focus.  Quickly becoming the go-to binding for the Burton team and beyond, the Malavita balances full wrap response around your boots with a mid-range flex that’s 100% focused on freestyle. Features like the Heel Hammock, Super Grip Capstrap™ and Asym Hammockstrap™ dial in response to the on-snow la vida of riders like McMorris, Davis, and Hale. Offered in two versions, choose the across-the-board compatibility of Re:Flex™ or pair the EST® model (which features the fluid mobility of The Hinge) with a Burton board featuring The Channel™ mounting system for the ultimate in flex, feel, and adjustability. Winged hi-backs on the Reaper colorway make for easier tweaks and presses."
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: " Sherman Jacket",
+        category: 'Snowboard',
+        productCategory: 'Jackets & Outerwear',
+        type: 'Water-Resistant',
+        gender: 'Mens',
+        brand: 'Burton',
+        Description:  "Get the broken-in vintage look without actually going broke in this tech-loaded everyday winter jacket.  The throwback style cotton canvas fabric of the Burton Sherman Jacket provides an exceptional value-to-style ratio. Lightweight Thermacore™ insulation regulates cold snaps, while Living Lining™ tech adapts to your ups and downs in activity for consistent all-day comfort. Triple-entry handwarmer pockets stow nearly an entire hardware store in one pocket and an entire lunch in the other, so you’re basically prepared for the next apocalypse."
         createdAt: new Date(),
         updatedAt: new Date()
       },
