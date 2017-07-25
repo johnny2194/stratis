@@ -44,6 +44,8 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Shipping_details');
+    return queryInterface.dropTable('Shipping_details', {
+      cascade: true
+    });
   }
 };

@@ -35,6 +35,8 @@ module.exports = {
     });
   },
   down: function(queryInterface, Sequelize) {
-    return queryInterface.dropTable('Reviews');
+    return queryInterface.dropTable('Reviews', {
+      cascade: true
+    });
   }
 };

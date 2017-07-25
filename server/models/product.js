@@ -8,7 +8,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING
     },
     category: {
-      type: DataTypes.STRING
+      type: DataTypes.TEXT
     },
     product_category: {
       type: DataTypes.STRING

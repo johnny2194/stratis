@@ -48,6 +48,8 @@ module.exports = {
     });
   },
   down: function(queryInterface, Sequelize) {
-    return queryInterface.dropTable('Stock_details');
+    return queryInterface.dropTable('Stock_details', {
+      cascade: true
+    });
   }
 };
