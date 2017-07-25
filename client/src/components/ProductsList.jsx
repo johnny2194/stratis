@@ -13,15 +13,9 @@ class ProductsList extends React.Component {
 	}
 
 	render() {
-		const {products} = this.props
-
-		const stock_details = products.map((product) => {
-			return product.stock_details
-		})
-		.reduce((a, b) => {
-			return a.concat(b)
-		}, [])
-		console.log(stock_details)
+		const {stock_details} = this.props
+	
+		
 
 		const productPreviews = stock_details.map((stock_details) => <ProductPreview key={stock_details.id} product={stock_details.product} stock_details={stock_details} />)
 

@@ -7,6 +7,7 @@
 		position: relative;
 		display: flex;
 		flex-flow: row no-wrap;
+		padding-top: 59px;
 
 		.filter-bar {
 			width: 30%;
@@ -16,7 +17,8 @@
 		}
 
 		.products-list {
-			width: 70%;
+			padding: 40px;
+			width: 75%;
 			min-height: 100vh;
 			background-color: green;
 			display: flex;
@@ -25,9 +27,16 @@
 			align-items: space-around;
 
 			.product-preview {
-				width: 30%;
+				display: flex;
+				flex-flow: column;
+				justify-content: space-around;
+				align-items: center;
+				width: 32%;
 				height: 400px;
 				background-color: blue;
+				margin: {
+					bottom: 30px;
+				}
 
 				h3 {
 
