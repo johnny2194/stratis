@@ -552,6 +552,50 @@ module.exports = {
         image: "images/BurtonDejaVu.jpeg",
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        color: 'Multi',
+        size: '162',
+        price: 545,
+        stock_level: 10,
+        productId: 10,
+        discount: null,
+        image: "images/HotMessSki.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Multi',
+        size: '172',
+        price: 545,
+        stock_level: 10,
+        productId: 10,
+        discount: null,
+        image: "images/HotMessSki.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Multi',
+        size: '168',
+        price: 545,
+        stock_level: 10,
+        productId: 11,
+        discount: null,
+        image: "images/Belafonte.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Multi',
+        size: '178',
+        price: 545,
+        stock_level: 10,
+        productId: 11,
+        discount: null,
+        image: "images/Belafonte.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
       
     ], {});

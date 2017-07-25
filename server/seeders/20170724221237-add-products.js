@@ -102,6 +102,27 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       },
+      {
+        name: "Hot Mess",
+        category: 'Skiing',
+        product_category: 'Ski',
+        type: 'All Mountain',
+        gender: 'Womens',
+        brand: 'Moment Ski',
+        description:  "From Moment themselves - The Hot Mess has been the ladies’ frontside ski for years, and this year we decided it was time to update it for more versatility. We gave it a bit more width and some Mustache Rocker, making it essentially the women’s version of our top-selling PB&J. Softer flex, lighter build, and of course the sweetest topsheets in the industry make the new Hot Mess just as hot as ever, and maybe even more messy. So grab a friend to hold your hair back, get your tall boots on, and shred everything from corduroy to crud like there’s no tomorrow.",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: "Belafonte",
+        category: 'Skiing',
+        product_category: 'Ski',
+        type: 'BigUnisex',
+        brand: 'Moment Ski',
+        description:  "From Moment themselves - Sit the Tahoe down at the training table, and you get the Belafonte: a fatter version of our hardpack hustler and the favorite of those who believe faster is better, no matter how much it snowed last night. Several generations ago, this was a hard-charging experts-only ski. However, thanks to Triple Camber Technology, the new Belafonte has turned from a track-day special into one of those turbo all-wheel-drive wagons: versatile, predictable, and easy to drive, but nevertheless ready to blow the doors off anyone who pulls up next to you.",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
 
       
     ], {});
