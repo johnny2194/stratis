@@ -1,13 +1,13 @@
 import { createStore, applyMiddleware } from 'redux'
-import createHistory from 'history/createBrowserHistory'
-
 import { routerMiddleware } from 'react-router-redux'
+import promiseMiddleware from 'redux-promise-middleware'
+import createHistory from 'history/createBrowserHistory'
+import thunk from 'redux-thunk'
+
 
 import rootReducer from './reducers/index'
-
 const history = createHistory()
-
-const middleware = routerMiddleware(history)
+const routerStuff = routerMiddleware(history)
 
 export {history}
 
@@ -17,10 +17,18 @@ const defaultState = {
     menuVisible: false,
     currentHoverDropdown: "",
     styling: "navigation"
+  },
+  products: {
+  	fetching: false,
+  	fetched: false,
+  	list: [],
+  	error: null
   }
 }
 
-const store = createStore(rootReducer, defaultState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(), applyMiddleware(middleware))
+const middleware = applyMiddleware(thunk, routerStuff, promiseMiddleware())
+
+const store = createStore(rootReducer, defaultState, middleware, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 
 export default store
