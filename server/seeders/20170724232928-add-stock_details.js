@@ -175,7 +175,7 @@ module.exports = {
         stock_level: 10,
         productId: 5,
         discount: null,
-        image: "images/burtonBindingGrey.jpeg",
+        image: "images/burtonBindingGrey.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -186,7 +186,7 @@ module.exports = {
         stock_level: 10,
         productId: 5,
         discount: null,
-        image: "images/burtonBindingGrey.jpeg",
+        image: "images/burtonBindingGrey.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -197,7 +197,7 @@ module.exports = {
         stock_level: 10,
         productId: 5,
         discount: null,
-        image: "images/burtonBindingGrey.jpeg",
+        image: "images/burtonBindingGrey.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -264,6 +264,116 @@ module.exports = {
         productId: 5,
         discount: null,
         image: "images/burtonBindingBlackBlue.jpeg",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Blue',
+        size: 'XS',
+        price: 135,
+        stock_level: 10,
+        productId: 6,
+        discount: null,
+        image: "images/BurtonShermanJacketBlue.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Blue',
+        size: 'S',
+        price: 135,
+        stock_level: 10,
+        productId: 6,
+        discount: null,
+        image: "images/BurtonShermanJacketBlue.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Blue',
+        size: 'M',
+        price: 135,
+        stock_level: 10,
+        productId: 6,
+        discount: null,
+        image: "images/BurtonShermanJacketBlue.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Blue',
+        size: 'L',
+        price: 135,
+        stock_level: 10,
+        productId: 6,
+        discount: null,
+        image: "images/BurtonShermanJacketBlue.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Blue',
+        size: 'XL',
+        price: 135,
+        stock_level: 10,
+        productId: 6,
+        discount: null,
+        image: "images/BurtonShermanJacketBlue.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Brown',
+        size: 'XS',
+        price: 135,
+        stock_level: 10,
+        productId: 6,
+        discount: null,
+        image: "images/BurtonShermanJacketBrown.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Brown',
+        size: 'S',
+        price: 135,
+        stock_level: 10,
+        productId: 6,
+        discount: null,
+        image: "images/BurtonShermanJacketBrown.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Brown',
+        size: 'M',
+        price: 135,
+        stock_level: 10,
+        productId: 6,
+        discount: null,
+        image: "images/BurtonShermanJacketBrown.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Brown',
+        size: 'L',
+        price: 135,
+        stock_level: 10,
+        productId: 6,
+        discount: null,
+        image: "images/BurtonShermanJacketBrown.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Brown',
+        size: 'XL',
+        price: 135,
+        stock_level: 10,
+        productId: 6,
+        discount: null,
+        image: "images/BurtonShermanJacketBrown.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
