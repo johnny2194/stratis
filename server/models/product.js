@@ -4,7 +4,13 @@ module.exports = function(sequelize, DataTypes) {
     name: {
       type: DataTypes.STRING
     },
+    description: {
+      type: DataTypes.STRING
+    },
     category: {
+      type: DataTypes.TEXT
+    },
+    product_category: {
       type: DataTypes.STRING
     },
     type: {
@@ -16,6 +22,7 @@ module.exports = function(sequelize, DataTypes) {
     brand: {
       type: DataTypes.STRING
     },
+
   }, {
     classMethods: {
       associate: function(models) {

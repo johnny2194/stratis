@@ -1,33 +1,28 @@
 'use strict';
 module.exports = {
   up: function(queryInterface, Sequelize) {
-    return queryInterface.createTable('Products', {
+    return queryInterface.createTable('Reviews', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      name: {
-        type: Sequelize.STRING
+      productId: {
+        type: Sequelize.INTEGER,
+        allowNull: false
       },
-      description: {
-        type: Sequelize.TEXT
+      userId: {
+        type: Sequelize.INTEGER,
+        allowNull: false
       },
-      category: {
-        type: Sequelize.STRING
+      comment: {
+        type: Sequelize.STRING,
+        allowNull: false
       },
-      product_category: {
-        type: Sequelize.STRING
-      },
-      type: {
-        type: Sequelize.STRING
-      },
-      gender: {
-        type: Sequelize.STRING
-      },
-      brand: {
-        type: Sequelize.STRING
+      rating: {
+        type: Sequelize.INTEGER,
+        allowNull: false
       },
       createdAt: {
         allowNull: false,
@@ -40,7 +35,7 @@ module.exports = {
     });
   },
   down: function(queryInterface, Sequelize) {
-    return queryInterface.dropTable('Products', {
+    return queryInterface.dropTable('Reviews', {
       cascade: true
     });
   }

@@ -18,11 +18,21 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false
       },
+      image: {
+        type: Sequelize.STRING
+      },
       stock_level: {
         type: Sequelize.INTEGER
       },
       productId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'Products',
+          as: 'products',
+          key: 'id'
+        },
+        allowNull: false
       },
       discount: {
         type: Sequelize.INTEGER
@@ -38,6 +48,8 @@ module.exports = {
     });
   },
   down: function(queryInterface, Sequelize) {
-    return queryInterface.dropTable('Stock_details');
+    return queryInterface.dropTable('Stock_details', {
+      cascade: true
+    });
   }
 };

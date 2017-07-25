@@ -10,7 +10,7 @@ module.exports = {
         stock_level: 10,
         productId: 1,
         discount: null,
-        imageUrl: "images/burton2.png"
+        image: "images/burton2.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -21,7 +21,7 @@ module.exports = {
         stock_level: 10,
         productId: 2,
         discount: null,
-        imageUrl: "images/moment1.png"
+        image: "images/moment1.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -32,7 +32,7 @@ module.exports = {
         stock_level: 5,
         productId: 2,
         discount: null,
-        imageUrl: "images/moment1.png"
+        image: "images/moment1.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -43,7 +43,7 @@ module.exports = {
         stock_level: 0,
         productId: 2,
         discount: null,
-        imageUrl: "images/moment1.png"
+        image: "images/moment1.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -54,7 +54,7 @@ module.exports = {
         stock_level: 10,
         productId: 3,
         discount: null,
-        imageUrl: "images/burton1.png"
+        image: "images/burton1.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -65,7 +65,7 @@ module.exports = {
         stock_level: 10,
         productId: 3,
         discount: null,
-        imageUrl: "images/burton1.png"
+        image: "images/burton1.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -76,7 +76,7 @@ module.exports = {
         stock_level: 10,
         productId: 4,
         discount: null,
-        imageUrl: "images/moment2.png"
+        image: "images/moment2.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -87,7 +87,7 @@ module.exports = {
         stock_level: 5,
         productId: 4,
         discount: null,
-        imageUrl: "images/moment2.png"
+        image: "images/moment2.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -98,7 +98,7 @@ module.exports = {
         stock_level: 0,
         productId: 4,
         discount: null,
-        imageUrl: "images/moment2.png"
+        image: "images/moment2.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -109,7 +109,7 @@ module.exports = {
         stock_level: 10,
         productId: 5,
         discount: null,
-        imageUrl: "images/burtonBindingBlack.jpeg"
+        image: "images/burtonBindingBlack.jpeg",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -120,7 +120,7 @@ module.exports = {
         stock_level: 10,
         productId: 5,
         discount: null,
-        imageUrl: "images/burtonBindingBlack.jpeg"
+        image: "images/burtonBindingBlack.jpeg",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -131,7 +131,7 @@ module.exports = {
         stock_level: 10,
         productId: 5,
         discount: null,
-        imageUrl: "images/burtonBindingBlack.jpeg"
+        image: "images/burtonBindingBlack.jpeg",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -142,7 +142,7 @@ module.exports = {
         stock_level: 10,
         productId: 5,
         discount: null,
-        imageUrl: "images/burtonBindingCork.jpeg"
+        image: "images/burtonBindingCork.jpeg",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -153,7 +153,7 @@ module.exports = {
         stock_level: 10,
         productId: 5,
         discount: null,
-        imageUrl: "images/burtonBindingCork.jpeg"
+        image: "images/burtonBindingCork.jpeg",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -164,7 +164,7 @@ module.exports = {
         stock_level: 10,
         productId: 5,
         discount: null,
-        imageUrl: "images/burtonBindingCork.jpeg"
+        image: "images/burtonBindingCork.jpeg",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -175,7 +175,7 @@ module.exports = {
         stock_level: 10,
         productId: 5,
         discount: null,
-        imageUrl: "images/burtonBindingGrey.png"
+        image: "images/burtonBindingGrey.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -186,7 +186,7 @@ module.exports = {
         stock_level: 10,
         productId: 5,
         discount: null,
-        imageUrl: "images/burtonBindingGrey.png"
+        image: "images/burtonBindingGrey.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -197,7 +197,7 @@ module.exports = {
         stock_level: 10,
         productId: 5,
         discount: null,
-        imageUrl: "images/burtonBindingGrey.png"
+        image: "images/burtonBindingGrey.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -208,7 +208,7 @@ module.exports = {
         stock_level: 10,
         productId: 5,
         discount: null,
-        imageUrl: "images/burtonBindingRed.jpeg"
+        image: "images/burtonBindingRed.jpeg",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -219,7 +219,7 @@ module.exports = {
         stock_level: 10,
         productId: 5,
         discount: null,
-        imageUrl: "images/burtonBindingRed.jpeg"
+        image: "images/burtonBindingRed.jpeg",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -230,7 +230,7 @@ module.exports = {
         stock_level: 10,
         productId: 5,
         discount: null,
-        imageUrl: "images/burtonBindingRed.jpeg"
+        image: "images/burtonBindingRed.jpeg",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -241,7 +241,7 @@ module.exports = {
         stock_level: 10,
         productId: 5,
         discount: null,
-        imageUrl: "images/burtonBindingBlackBlue.jpeg"
+        image: "images/burtonBindingBlackBlue.jpeg",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -252,7 +252,7 @@ module.exports = {
         stock_level: 10,
         productId: 5,
         discount: null,
-        imageUrl: "images/burtonBindingBlackBlue.jpeg"
+        image: "images/burtonBindingBlackBlue.jpeg",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -263,7 +263,7 @@ module.exports = {
         stock_level: 10,
         productId: 5,
         discount: null,
-        imageUrl: "images/burtonBindingBlackBlue.jpeg"
+        image: "images/burtonBindingBlackBlue.jpeg",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -274,7 +274,7 @@ module.exports = {
         stock_level: 10,
         productId: 6,
         discount: null,
-        imageUrl: "images/BurtonShermanJacketBlue.png"
+        image: "images/BurtonShermanJacketBlue.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -285,7 +285,7 @@ module.exports = {
         stock_level: 10,
         productId: 6,
         discount: null,
-        imageUrl: "images/BurtonShermanJacketBlue.png"
+        image: "images/BurtonShermanJacketBlue.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -296,7 +296,7 @@ module.exports = {
         stock_level: 10,
         productId: 6,
         discount: null,
-        imageUrl: "images/BurtonShermanJacketBlue.png"
+        image: "images/BurtonShermanJacketBlue.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -307,7 +307,7 @@ module.exports = {
         stock_level: 10,
         productId: 6,
         discount: null,
-        imageUrl: "images/BurtonShermanJacketBlue.png"
+        image: "images/BurtonShermanJacketBlue.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -318,7 +318,7 @@ module.exports = {
         stock_level: 10,
         productId: 6,
         discount: null,
-        imageUrl: "images/BurtonShermanJacketBlue.png"
+        image: "images/BurtonShermanJacketBlue.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -329,7 +329,7 @@ module.exports = {
         stock_level: 10,
         productId: 6,
         discount: null,
-        imageUrl: "images/BurtonShermanJacketBrown.png"
+        image: "images/BurtonShermanJacketBrown.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -340,7 +340,7 @@ module.exports = {
         stock_level: 10,
         productId: 6,
         discount: null,
-        imageUrl: "images/BurtonShermanJacketBrown.png"
+        image: "images/BurtonShermanJacketBrown.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -351,7 +351,7 @@ module.exports = {
         stock_level: 10,
         productId: 6,
         discount: null,
-        imageUrl: "images/BurtonShermanJacketBrown.png"
+        image: "images/BurtonShermanJacketBrown.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -362,7 +362,7 @@ module.exports = {
         stock_level: 10,
         productId: 6,
         discount: null,
-        imageUrl: "images/BurtonShermanJacketBrown.png"
+        image: "images/BurtonShermanJacketBrown.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -373,7 +373,7 @@ module.exports = {
         stock_level: 10,
         productId: 6,
         discount: null,
-        imageUrl: "images/BurtonShermanJacketBrown.png"
+        image: "images/BurtonShermanJacketBrown.png",
         createdAt: new Date(),
         updatedAt: new Date()
       },

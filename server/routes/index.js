@@ -1,6 +1,8 @@
 const usersController = require('../controllers').users
 const productsController = require('../controllers').products
 const stock_detailsController = require('../controllers').stock_details
+const ordersController = require('../controllers').orders
+const purchasesController = require('../controllers').purchases
 
 module.exports = (app) => {
 	// USER ROUTES
@@ -9,6 +11,20 @@ module.exports = (app) => {
 	app.get('/api/users/:userId', usersController.show)
 	app.delete('/api/users/:userId', usersController.delete)
 	app.patch('/api/users/:userId', usersController.update)
+
+	// ORDER ROUTES
+	app.post('/api/orders', ordersController.create)
+	app.get('/api/orders', ordersController.index)
+	app.get('/api/orders/:orderId', ordersController.show)
+	app.delete('/api/orders/:orderId', ordersController.delete)
+	app.patch('/api/orders/:orderId', ordersController.update)
+
+	// PURCHASE ROUTES
+	app.post('/api/purchases', purchasesController.create)
+	app.get('/api/purchases', purchasesController.index)
+	app.get('/api/purchases/:purchaseId', purchasesController.show)
+	app.delete('/api/purchases/:purchaseId', purchasesController.delete)
+	app.patch('/api/purchases/:purchaseId', purchasesController.update)
 
 	// PRODUCT ROUTES
 	app.post('/api/products', productsController.create)
