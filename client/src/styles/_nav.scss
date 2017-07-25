@@ -15,7 +15,7 @@ $main-blue: #213875;
 	border-bottom: $border;
 	color: white;
 	width: 100%;
-	z-index: 3;
+	z-index: 10;
 
 
 	div {
@@ -51,6 +51,10 @@ $main-blue: #213875;
 	
 		&.right-nav {
 			justify-content: flex-end;
+
+			li {
+				width: 128px !important;
+			}
 		}
 
 		li {
@@ -60,7 +64,7 @@ $main-blue: #213875;
 			align-items: center;
 			list-style: none;
 			font-size: 12px;
-			font-weight: 300;
+			font-weight: 400;
 			width: 88px;
 			height: 100%;
 			transition: all 0.2s;
@@ -80,14 +84,52 @@ $main-blue: #213875;
 				}
 			}
 
+			&.men:hover{
+					background-color: $main-blue;		
+			}
+
+			&.women:hover{
+					background-color: $main-blue;		
+			}
+
+			&.board:hover{
+					background-color: $main-blue;		
+			}
+
 			&.ski{
 				border-right: $border;
+				&:hover {
+					background-color: $main-blue;		
+				}
+			}
+
+			&.login:hover{
+					background-color: white;
+					color: $main-blue;		
 			}
 
 			&:hover {
-				background-color: $main-blue;	
 				cursor: pointer;	
 			}
 		}
 	}
+
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }
