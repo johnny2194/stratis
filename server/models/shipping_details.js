@@ -1,25 +1,23 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
-  var User = sequelize.define('User', {
-    first_name: {
+  var Shipping_details = sequelize.define('Shipping_details', {
+    first_line: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    last_name: {
+    city: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true
+    country: {
+      type: DataTypes.STRING
     },
-    password: {
+    postcode: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    gender: {
-      type: DataTypes.STRING,
+    userId: {
+      type: DataTypes.INTEGER,
       allowNull: false
     }
   }, {
@@ -29,5 +27,5 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   });
-  return User;
+  return Shipping_details;
 };
