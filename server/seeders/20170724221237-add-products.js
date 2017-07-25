@@ -5,8 +5,8 @@ module.exports = {
     return queryInterface.bulkInsert('Products', [
       {
         name: "TWC Pro Snowboard '18",
-        category: 'Snowboard',
-        product_category: 'Board',
+        category: 'Snowboarding',
+        product_category: 'Snowboard',
         type: 'All Mountain',
         gender: 'Mens',
         brand: 'Burton',
@@ -16,7 +16,7 @@ module.exports = {
       },
       {
         name: "Bibby '18",
-        category: 'Ski',
+        category: 'Skiing',
         product_category: 'Ski',
         type: 'All Mountain',
         gender: 'Unisex',
@@ -27,8 +27,8 @@ module.exports = {
       },
       {
         name: "Family Tree Custom Split '18",
-        category: 'Snowboard',
-        product_category: 'Board',
+        category: 'Snowboarding',
+        product_category: 'Snowboard',
         type: 'Backcountry',
         gender: 'Mens',
         brand: 'Burton',
@@ -38,7 +38,7 @@ module.exports = {
       },
       {
         name: "Deathwish '18",
-        category: 'Ski',
+        category: 'Skiing',
         product_category: 'Ski',
         type: 'All Mountain',
         gender: 'Unisex',
@@ -49,7 +49,7 @@ module.exports = {
       },
       {
         name: "Malavita EST '18",
-        category: 'Snowboard',
+        category: 'Snowboarding',
         product_category: 'Binding',
         type: 'Freestyle',
         gender: 'Unisex',
@@ -60,12 +60,66 @@ module.exports = {
       },
       {
         name: " Sherman Jacket",
-        category: 'Snowboard',
-        product_category: 'Jackets & Outerwear',
+        category: 'Snowboarding',
+        product_category: 'Jacket',
         type: 'Water-Resistant',
         gender: 'Mens',
         brand: 'Burton',
         description:  "Get the broken-in vintage look without actually going broke in this tech-loaded everyday winter jacket.  The throwback style cotton canvas fabric of the Burton Sherman Jacket provides an exceptional value-to-style ratio. Lightweight Thermacore™ insulation regulates cold snaps, while Living Lining™ tech adapts to your ups and downs in activity for consistent all-day comfort. Triple-entry handwarmer pockets stow nearly an entire hardware store in one pocket and an entire lunch in the other, so you’re basically prepared for the next apocalypse.",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: " Stratus Pant ",
+        category: 'Snowboarding',
+        product_category: 'Pant',
+        type: '',
+        gender: 'Womens',
+        brand: 'Burton',
+        description:  "Professional-grade GORE-TEX® fabric performance for the 100-day season.  The lightweight feel and GUARANTEED TO KEEP YOU DRY® GORE-TEX® fabric of this clean and simple shell makes it a favorite for riders who demand premium treatment in demanding conditions. With a full list of guide-grade features, from a highly breathable zonal mapped lining to an articulated fit with a flattering contoured waist, the women’s Burton [ak] GORE-TEX® 2L Stratus Pant offers professional-grade tech for the everyday rider. Add warm layers underneath midwinter to dial in your warmth or open the vents in the spring, no matter the weather or the season, this is the only pant you need.",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: "Family Tree Day Trader",
+        category: 'Snowboarding',
+        product_category: 'Snowboard',
+        type: 'All Mountain',
+        gender: 'Womens',
+        brand: 'Burton',
+        description:  "Elevating your performance in the deep and steep with effortless float and excessive control.  From exploring the trial map to sneaking away in search of secret stashes, the Burton Day Trader boosts confidence with a versatile and surfy shape that thrives on all terrain. Developed with freeride maven Kimmy Fasani, this tapered, directional board is designed to explore the off-piste with ease, yet is just as fun on groomers, too. Directional Flat Top profiling enhances stability and control, while the early rise kicks add the effortless float and feeling of rocker. Features like a sustainable FSC™ certified wood core and bio-based Super Sap® resin ensure the board is easy on both you and the environment.",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: "Déjà Vu",
+        category: 'Snowboarding',
+        product_category: 'Snowboard',
+        type: 'All Mountain',
+        gender: 'Womens',
+        brand: 'Burton',
+        description:  "Make every turn a familiar moment with the versatility and catch-free control of a board that’s built to expand your horizons. From unexplored peaks to familiar parks, the Burton Déjà Vu tames anything that stands in your way. The board’s smooth rocker profile surfs through deep powder, while subtle camber underfoot and a true twin design keeps you in control no matter which way you point it. Side Effects lengthen the contact points to add float and create a more forgiving feel, while Overbite Frostbite’s all-wheel-drive edge control gives chargers the upper hand on hardpack and technical terrain.",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: "Hot Mess",
+        category: 'Skiing',
+        product_category: 'Ski',
+        type: 'All Mountain',
+        gender: 'Womens',
+        brand: 'Moment Ski',
+        description:  "From Moment themselves - The Hot Mess has been the ladies’ frontside ski for years, and this year we decided it was time to update it for more versatility. We gave it a bit more width and some Mustache Rocker, making it essentially the women’s version of our top-selling PB&J. Softer flex, lighter build, and of course the sweetest topsheets in the industry make the new Hot Mess just as hot as ever, and maybe even more messy. So grab a friend to hold your hair back, get your tall boots on, and shred everything from corduroy to crud like there’s no tomorrow.",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: "Belafonte",
+        category: 'Skiing',
+        product_category: 'Ski',
+        type: 'BigUnisex',
+        brand: 'Moment Ski',
+        description:  "From Moment themselves - Sit the Tahoe down at the training table, and you get the Belafonte: a fatter version of our hardpack hustler and the favorite of those who believe faster is better, no matter how much it snowed last night. Several generations ago, this was a hard-charging experts-only ski. However, thanks to Triple Camber Technology, the new Belafonte has turned from a track-day special into one of those turbo all-wheel-drive wagons: versatile, predictable, and easy to drive, but nevertheless ready to blow the doors off anyone who pulls up next to you.",
         createdAt: new Date(),
         updatedAt: new Date()
       },

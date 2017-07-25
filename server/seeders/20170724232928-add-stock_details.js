@@ -377,8 +377,226 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       },
-
-
+      {
+        color: 'Blue',
+        size: 'XS',
+        price: 220,
+        stock_level: 5,
+        productId: 7,
+        discount: null,
+        image: "images/BurtonWomensStratusPantBlue.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Blue',
+        size: 'S',
+        price: 220,
+        stock_level: 5,
+        productId: 7,
+        discount: null,
+        image: "images/BurtonWomensStratusPantBlue.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Blue',
+        size: 'M',
+        price: 220,
+        stock_level: 5,
+        productId: 7,
+        discount: null,
+        image: "images/BurtonWomensStratusPantBlue.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Blue',
+        size: 'L',
+        price: 220,
+        stock_level: 5,
+        productId: 7,
+        discount: null,
+        image: "images/BurtonWomensStratusPantBlue.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Blue',
+        size: 'XL',
+        price: 220,
+        stock_level: 5,
+        productId: 7,
+        discount: null,
+        image: "images/BurtonWomensStratusPantBlue.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Brown',
+        size: 'XS',
+        price: 220,
+        stock_level: 5,
+        productId: 7,
+        discount: null,
+        image: "images/BurtonWomensStratusPantBrown.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Brown',
+        size: 'S',
+        price: 220,
+        stock_level: 5,
+        productId: 7,
+        discount: null,
+        image: "images/BurtonWomensStratusPantBrown.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Brown',
+        size: 'M',
+        price: 220,
+        stock_level: 5,
+        productId: 7,
+        discount: null,
+        image: "images/BurtonWomensStratusPantBrown.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Brown',
+        size: 'L',
+        price: 220,
+        stock_level: 5,
+        productId: 7,
+        discount: null,
+        image: "images/BurtonWomensStratusPantBrown.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Brown',
+        size: 'XL',
+        price: 220,
+        stock_level: 5,
+        productId: 7,
+        discount: null,
+        image: "images/BurtonWomensStratusPantBrown.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Maroon / Blue',
+        size: '145',
+        price: 415,
+        stock_level: 5,
+        productId: 8,
+        discount: null,
+        image: "images/BurtonDayTrader.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Maroon / Blue',
+        size: '150',
+        price: 415,
+        stock_level: 5,
+        productId: 8,
+        discount: null,
+        image: "images/BurtonDayTrader.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Multi',
+        size: '138',
+        price: 325,
+        stock_level: 5,
+        productId: 9,
+        discount: null,
+        image: "images/BurtonDejaVu.jpeg",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Multi',
+        size: '141',
+        price: 325,
+        stock_level: 5,
+        productId: 9,
+        discount: null,
+        image: "images/BurtonDejaVu.jpeg",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Multi',
+        size: '146',
+        price: 325,
+        stock_level: 5,
+        productId: 9,
+        discount: null,
+        image: "images/BurtonDejaVu.jpeg",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Multi',
+        size: '149',
+        price: 325,
+        stock_level: 5,
+        productId: 9,
+        discount: null,
+        image: "images/BurtonDejaVu.jpeg",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Multi',
+        size: '162',
+        price: 545,
+        stock_level: 10,
+        productId: 10,
+        discount: null,
+        image: "images/HotMessSki.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Multi',
+        size: '172',
+        price: 545,
+        stock_level: 10,
+        productId: 10,
+        discount: null,
+        image: "images/HotMessSki.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Multi',
+        size: '168',
+        price: 545,
+        stock_level: 10,
+        productId: 11,
+        discount: null,
+        image: "images/Belafonte.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Multi',
+        size: '178',
+        price: 545,
+        stock_level: 10,
+        productId: 11,
+        discount: null,
+        image: "images/Belafonte.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }
       
     ], {});
   },
