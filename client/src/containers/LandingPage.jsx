@@ -72,7 +72,8 @@ class LandingPage extends React.Component {
 }
 
 // this is taking the navigation portion of state and attaching it to the Navigation's props
-function mapStateToProps(state) {
+function mapStateToProps(state, p) {
+  
   return state.navigation
 }
 
