@@ -1,5 +1,9 @@
 $border: solid 1px rgba(255,255,255,0.1);
 $main-blue: #213875;
+$mens-color: #DAF0F6;//#6da398
+$womens-color: #d9ddf4;//#6da398 f4efd9
+$board-color: #dcf6da;
+$ski-color: #f4e3d9;
 
 .navigation {
 
@@ -12,17 +16,20 @@ $main-blue: #213875;
 	position: fixed;
 	top: 0;
 	height: 59px;
-	border-bottom: $border;
 	color: white;
 	width: 100%;
 	z-index: 10;
 
 
 	div {
-		width: 20%;
+		width: 100%;
 		justify-content: space-around;
 		display: flex;
 		color: blue;
+		height: 100%;
+    border-bottom: $border;
+    align-items: center;
+
 
 		span {
 			display:flex;
@@ -41,6 +48,7 @@ $main-blue: #213875;
 				cursor: pointer;
 			}
 		}
+
 	}
 
 
@@ -54,6 +62,15 @@ $main-blue: #213875;
 
 			li {
 				width: 128px !important;
+				text-transform: capitalize !important;
+				font-size: 14px;
+
+			&.bag{
+				text-transform: uppercase !important;
+				font-size: 12px;
+				
+			}
+
 			}
 		}
 
@@ -70,12 +87,19 @@ $main-blue: #213875;
 			transition: all 0.2s;
 			border: {
 				left: $border;
+				bottom: $border;
+
 			}
+			z-index: 11;
 
 			&.menu{
 				border: none;
 				width: 100px;
 				transition: all 0.2s;
+      	border-bottom: $border;
+				font-weight: 400;
+
+
 
 				&:hover {
 					color: $main-blue;
@@ -85,21 +109,42 @@ $main-blue: #213875;
 			}
 
 			&.men:hover{
-					background-color: $main-blue;		
+					background-color: $mens-color;
+					border-bottom: 1px solid $mens-color;	
+					color: $main-blue;
+      		font-weight: 600;
+
+
 			}
 
 			&.women:hover{
-					background-color: $main-blue;		
+					background-color: $womens-color;	
+					border-bottom: 1px solid $womens-color;
+					color: $main-blue;
+     			font-weight: 600;
+
+
 			}
 
 			&.board:hover{
-					background-color: $main-blue;		
+					background-color: $board-color;	
+					border-bottom: 1px solid $board-color;
+					color: $main-blue;
+     		 font-weight: 600;
+					
 			}
 
 			&.ski{
 				border-right: $border;
+
 				&:hover {
-					background-color: $main-blue;		
+					background-color: #FFE8AA;
+					color: $main-blue;
+      		font-weight: 600;
+      		background-color: $ski-color;	
+      		border-bottom: 1px solid $ski-color;
+
+
 				}
 			}
 
@@ -113,6 +158,7 @@ $main-blue: #213875;
 			}
 		}
 	}
+	
 
 }
 

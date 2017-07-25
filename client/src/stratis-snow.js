@@ -27,8 +27,8 @@ const router = (
 			<div>
 				<Route exact path="/" component={LandingPage} />
 				<Route path="/products" component={ProductsPage} />
-				<Route path="/login" component={LoginPage} />
-				<Route path="/test" component={TestPage} />				
+        <Route path="/login" component={LoginPage} />
+				<Route path="/test" component={TestPage} />
 			</div>
 		</Router>
   </Provider>
