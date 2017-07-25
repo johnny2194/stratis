@@ -12,19 +12,25 @@ let navStyling = "navigation"
 
 class LandingPage extends React.Component {
 
+  constructor(props) {
+    super(props)
+    this.handleScroll = this.handleScroll.bind(this)
+  }
+
   componentDidMount() {
-    window.addEventListener('scroll', (event) => {
-      console.log(window.scrollY)
-      if (window.scrollY > 326 && window.scrollY < 1040) {  //
-        this.props.changeStyling('navigation navigation-invert')
-      } else {
-        this.props.changeStyling('navigation')
-      }
-    })
+    window.addEventListener('scroll', this.handleScroll)
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll')
+    window.removeEventListener('scroll', this.handleScroll)
+  }
+
+  handleScroll() {
+    if (window.scrollY > 326 && window.scrollY < 1040) {
+      this.props.changeStyling('navigation navigation-invert')
+    } else {
+      this.props.changeStyling('navigation')
+    }
   }
 
 	render() {
