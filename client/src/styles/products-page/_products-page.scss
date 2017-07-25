@@ -1,0 +1,44 @@
+
+.products-page {
+	width: 100%;
+
+	.products-container {		
+		width: 100%;
+		position: relative;
+		display: flex;
+		flex-flow: row no-wrap;
+
+		.filter-bar {
+			width: 30%;
+			min-height: 100vh;
+			background-color: red;
+
+		}
+
+		.products-list {
+			width: 70%;
+			min-height: 100vh;
+			background-color: green;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			align-items: space-around;
+
+			.product-preview {
+				width: 30%;
+				height: 400px;
+				background-color: blue;
+
+				h3 {
+
+				}
+
+				img {
+					width: 95%;
+				}
+			}
+		}
+		
+	}
+
+}

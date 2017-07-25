@@ -6,3 +6,10 @@ export function fetchProducts() {
 		payload: axios.get('http://localhost:3000/api/products')
 	}
 }
+
+export function setProductsFilter(filter) {
+	return {
+		type: 'SET_PRODUCTS_FILTER',
+		filter
+	}
+}
