@@ -140,7 +140,6 @@ class Navigation extends React.Component {
           <li className="login">Login</li>
           <li>Search</li>
           <li className="bag"onClick={this.handleToggleBasket.bind(this)}>{basketMenuItemText}</li>
-        </ul>
 
         {basket}
         {mensDropDown}
