@@ -4,7 +4,24 @@ const stock_detailsController = require('../controllers').stock_details
 const ordersController = require('../controllers').orders
 const purchasesController = require('../controllers').purchases
 
-module.exports = (app) => {
+function isLoggedIn(req, res, next) {
+    // if user is authenticated in the session, carry on 
+    if (req.isAuthenticated()) return next();
+    // if they aren't redirect them to the home page
+    res.redirect('/');
+}
+
+module.exports = (app, passport) => {
+	// AUTHENTICATION ROUTES
+	app.get('/login', function(req, res) {
+    res.send({ message: 'login' })
+  });
+  app.get('/signup', function(req, res) {
+		res.send({ message: 'signup' })
+  });
+
+
+
 	// USER ROUTES
 	app.post('/api/users', usersController.create)
 	app.get('/api/users', usersController.index)
