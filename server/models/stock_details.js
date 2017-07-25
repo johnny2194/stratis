@@ -15,7 +15,8 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER
     },
     productId: {
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
+      allowNull: false
     },
     discount: {
       type: DataTypes.INTEGER
