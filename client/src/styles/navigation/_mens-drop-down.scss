@@ -1,0 +1,27 @@
+$translucent-background: rgba(33, 56, 117, 0.90);
+
+.mens-drop-down {
+  position: fixed;
+  top: 59px;
+  height: 100vh;
+  z-index: 6;
+  width: 100vw !important;
+  display: flex;
+  flex-wrap: wrap;
+    div {
+      height: 60%;
+      z-index: 7;
+      width: 100vw !important;
+      background-color: $translucent-background;
+
+      &.menu {
+        z-index: 8;
+        top: 0;
+        height: 40%;
+        width: 100vw !important;
+        background-color: #fff;
+      }
+      
+    }
+    
+}
