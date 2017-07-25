@@ -5,7 +5,7 @@ module.exports = {
     return queryInterface.bulkInsert('Products', [
       {
         name: "TWC Pro Snowboard '18",
-        category: 'Snowboard',
+        category: 'Snowboarding',
         product_category: 'Board',
         type: 'All Mountain',
         gender: 'Mens',
@@ -16,7 +16,7 @@ module.exports = {
       },
       {
         name: "Bibby '18",
-        category: 'Ski',
+        category: 'Skiing',
         product_category: 'Ski',
         type: 'All Mountain',
         gender: 'Unisex',
@@ -27,7 +27,7 @@ module.exports = {
       },
       {
         name: "Family Tree Custom Split '18",
-        category: 'Snowboard',
+        category: 'Snowboarding',
         product_category: 'Board',
         type: 'Backcountry',
         gender: 'Mens',
@@ -38,7 +38,7 @@ module.exports = {
       },
       {
         name: "Deathwish '18",
-        category: 'Ski',
+        category: 'Skiing',
         product_category: 'Ski',
         type: 'All Mountain',
         gender: 'Unisex',
@@ -49,7 +49,7 @@ module.exports = {
       },
       {
         name: "Malavita EST '18",
-        category: 'Snowboard',
+        category: 'Snowboarding',
         product_category: 'Binding',
         type: 'Freestyle',
         gender: 'Unisex',
@@ -60,12 +60,23 @@ module.exports = {
       },
       {
         name: " Sherman Jacket",
-        category: 'Snowboard',
+        category: 'Snowboarding',
         product_category: 'Jackets & Outerwear',
         type: 'Water-Resistant',
         gender: 'Mens',
         brand: 'Burton',
         description:  "Get the broken-in vintage look without actually going broke in this tech-loaded everyday winter jacket.  The throwback style cotton canvas fabric of the Burton Sherman Jacket provides an exceptional value-to-style ratio. Lightweight Thermacore™ insulation regulates cold snaps, while Living Lining™ tech adapts to your ups and downs in activity for consistent all-day comfort. Triple-entry handwarmer pockets stow nearly an entire hardware store in one pocket and an entire lunch in the other, so you’re basically prepared for the next apocalypse.",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: " Stratus Pant ",
+        category: 'Snowboarding',
+        product_category: 'Pants',
+        type: '',
+        gender: 'Womens',
+        brand: 'Burton',
+        description:  "Professional-grade GORE-TEX® fabric performance for the 100-day season.  The lightweight feel and GUARANTEED TO KEEP YOU DRY® GORE-TEX® fabric of this clean and simple shell makes it a favorite for riders who demand premium treatment in demanding conditions. With a full list of guide-grade features, from a highly breathable zonal mapped lining to an articulated fit with a flattering contoured waist, the women’s Burton [ak] GORE-TEX® 2L Stratus Pant offers professional-grade tech for the everyday rider. Add warm layers underneath midwinter to dial in your warmth or open the vents in the spring, no matter the weather or the season, this is the only pant you need.",
         createdAt: new Date(),
         updatedAt: new Date()
       },

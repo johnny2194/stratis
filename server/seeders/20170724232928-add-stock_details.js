@@ -377,8 +377,116 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       },
-
-
+      {
+        color: 'Blue',
+        size: 'XS',
+        price: 220,
+        stock_level: 5,
+        productId: 7,
+        discount: null,
+        image: "images/BurtonWomensStratusPantBlue.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Blue',
+        size: 'S',
+        price: 220,
+        stock_level: 5,
+        productId: 7,
+        discount: null,
+        image: "images/BurtonWomensStratusPantBlue.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Blue',
+        size: 'M',
+        price: 220,
+        stock_level: 5,
+        productId: 7,
+        discount: null,
+        image: "images/BurtonWomensStratusPantBlue.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Blue',
+        size: 'L',
+        price: 220,
+        stock_level: 5,
+        productId: 7,
+        discount: null,
+        image: "images/BurtonWomensStratusPantBlue.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Blue',
+        size: 'XL',
+        price: 220,
+        stock_level: 5,
+        productId: 7,
+        discount: null,
+        image: "images/BurtonWomensStratusPantBlue.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Brown',
+        size: 'XS',
+        price: 220,
+        stock_level: 5,
+        productId: 7,
+        discount: null,
+        image: "images/BurtonWomensStratusPantBrown.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Brown',
+        size: 'S',
+        price: 220,
+        stock_level: 5,
+        productId: 7,
+        discount: null,
+        image: "images/BurtonWomensStratusPantBrown.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Brown',
+        size: 'M',
+        price: 220,
+        stock_level: 5,
+        productId: 7,
+        discount: null,
+        image: "images/BurtonWomensStratusPantBrown.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Brown',
+        size: 'L',
+        price: 220,
+        stock_level: 5,
+        productId: 7,
+        discount: null,
+        image: "images/BurtonWomensStratusPantBrown.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Brown',
+        size: 'XL',
+        price: 220,
+        stock_level: 5,
+        productId: 7,
+        discount: null,
+        image: "images/BurtonWomensStratusPantBrown.png",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }
       
     ], {});
   },
