@@ -5,7 +5,6 @@ function navigation(state = [], action) {
     case 'CHANGE_STYLING':
       return Object.assign({}, state, {styling: action.newStyling})
     default:
-      console.log(action)
       return state
   }
 }

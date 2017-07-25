@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.16.2",
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "express-session": "^1.15.4",
@@ -31,6 +32,8 @@
     "react-scrolllock": "^1.0.8",
     "react-transition-group": "^2.2.0",
     "redux": "^3.7.2",
+    "redux-promise-middleware": "^4.3.0",
+    "redux-thunk": "^2.2.0",
     "sequelize": "^4.4.0"
   },
   "devDependencies": {
