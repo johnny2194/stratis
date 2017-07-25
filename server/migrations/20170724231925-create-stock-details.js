@@ -18,6 +18,9 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false
       },
+      image: {
+        type: Sequelize.STRING
+      },
       stock_level: {
         type: Sequelize.INTEGER
       },

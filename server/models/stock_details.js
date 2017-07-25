@@ -7,6 +7,9 @@ module.exports = function(sequelize, DataTypes) {
     size: {
       type: DataTypes.STRING
     },
+    image: {
+      type: DataTypes.STRING
+    },
     price: {
       type: DataTypes.INTEGER,
       allowNull: false
@@ -20,7 +23,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     discount: {
       type: DataTypes.INTEGER
-    },
+    }
   }, {
     classMethods: {
       associate: function(models) {
