@@ -12,19 +12,25 @@ let navStyling = "navigation"
 
 class LandingPage extends React.Component {
 
+  constructor(props) {
+    super(props)
+    this.handleScroll = this.handleScroll.bind(this)
+  }
+
   componentDidMount() {
-    window.addEventListener('scroll', (event) => {
-      console.log(window.scrollY)
-      if (window.scrollY > 326 && window.scrollY < 1040) {  //
-        this.props.changeStyling('navigation navigation-invert')
-      } else {
-        this.props.changeStyling('navigation')
-      }
-    })
+    window.addEventListener('scroll', this.handleScroll)
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll')
+    window.removeEventListener('scroll', this.handleScroll)
+  }
+
+  handleScroll() {
+    if (window.scrollY > 326 && window.scrollY < 1040) {
+      this.props.changeStyling('navigation navigation-invert')
+    } else {
+      this.props.changeStyling('navigation')
+    }
   }
 
 	render() {
@@ -73,7 +79,7 @@ class LandingPage extends React.Component {
 
 // this is taking the navigation portion of state and attaching it to the Navigation's props
 function mapStateToProps(state, routing) {
-  return Object.assign({}, state.navigation, state.routing)
+  return Object.assign({}, state.navigation, routing)
 }
 
 // this is attaching our actions to the Navigation component

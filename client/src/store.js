@@ -23,7 +23,7 @@ const defaultState = {
   products: {
   	fetching: false,
   	fetched: false,
-  	list: [],
+  	stock_details: [],
   	error: null
   }
 }
