@@ -1,4 +1,14 @@
-var User = require('../models').User
+const User = require('../models').User
+const models = require('../models')
+
+User.hasMany(models.Shipping_details, {
+  foreignKey: 'userId',
+  as: 'shipping_details'
+})
+User.hasMany(models.Order, {
+  foreignKey: 'userId',
+  as: 'orders'
+})
 
 module.exports = {
   create(req, res) {
@@ -15,13 +25,23 @@ module.exports = {
   },
   index(req, res) {
     return User
-      .findAll()
+      .findAll({
+        include: [{
+          model: models.Order,
+          as: 'orders'
+        }]
+      })
       .then(users => res.status(200).send(users))
       .catch(error => res.status(400).send(error));
   },
   show(req, res) {
     return User
-      .findById(req.params.userId)
+      .findById(req.params.userId, {
+        include: [{
+          model: models.Order,
+          as: 'orders'
+        }]
+      })
       .then(user => res.status(200).send(user))
       .catch(error => res.status(400).send(error))
   },

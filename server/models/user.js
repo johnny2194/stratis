@@ -1,4 +1,7 @@
 'use strict';
+const models = require('./index')
+
+
 module.exports = function(sequelize, DataTypes) {
   var User = sequelize.define('User', {
     first_name: {
@@ -29,5 +32,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   });
+ 
+
   return User;
 };

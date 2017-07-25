@@ -1,4 +1,5 @@
-var Stock_details = require('../models').Stock_details
+const Stock_details = require('../models').Stock_details
+const models = require('../models')
 
 module.exports = {
   create(req, res) {

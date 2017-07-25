@@ -1,4 +1,14 @@
-var Order = require('../models').Order
+const Order = require('../models').Order
+const models = require('../models')
+
+Order.hasMany(models.Purchase, {
+  foreignKey: 'orderId',
+  as: 'purchases'
+})
+Order.belongsTo(models.User, {
+  foreignKey: 'userId',
+  as: 'user'
+})
 
 module.exports = {
   create(req, res) {

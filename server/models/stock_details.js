@@ -1,4 +1,6 @@
 'use strict';
+const models = require('./index')
+
 module.exports = function(sequelize, DataTypes) {
   var Stock_details = sequelize.define('Stock_details', {
     color: {

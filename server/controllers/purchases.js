@@ -1,4 +1,5 @@
-var Purchase = require('../models').Purchase
+const Purchase = require('../models').Purchase
+const models = require('../models')
 
 module.exports = {
   create(req, res) {
