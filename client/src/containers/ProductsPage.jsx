@@ -1,9 +1,13 @@
 import React from 'react'
+import Navigation from '../components/Navigation'
+
 
 class ProductsPage extends React.Component {
 	render() {
 		return (
-			<div>This is the products page</div>
+			<div>
+      <Navigation initialStyling="navigation navigation-invert"/>
+      This is the products page</div>
 		)
 	}
 }

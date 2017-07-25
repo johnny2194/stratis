@@ -4,3 +4,10 @@ export function toggleBasket() {
     type: "TOGGLE_BASKET"
   }
 }
+
+export function changeStyling(newStyling) {
+  return {
+    type: "CHANGE_STYLING",
+    newStyling
+  }
+}
