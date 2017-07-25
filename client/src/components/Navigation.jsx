@@ -10,67 +10,9 @@ import MensDropDown from './MensDropDown'
 class Navigation extends React.Component {
   componentDidMount() {
     if (this.props.initialStyling) this.props.changeStyling(this.props.initialStyling)
-    const nav = this.refs.nav
-    const menu = this.refs.menu
-    const men = this.refs.men
-    const women = this.refs.women
-    const board = this.refs.board
-    const ski = this.refs.ski
-    const logoWrapper = this.refs['logo-wrapper']
-    const rightNav = this.refs['right-nav']
-
-
-    nav.addEventListener('mouseleave', (event) => {
-      this.props.hideDropdown()
-      this.props.setCurrentDropdown("")
-    })
-    menu.addEventListener('mouseenter', (event) => {
-      this.props.hideDropdown()
-      this.props.setCurrentDropdown("")
-    })
-    men.addEventListener('mouseenter', (event) => {
-      this.props.showDropdown()
-      this.props.setCurrentDropdown("men")
-    })
-    women.addEventListener('mouseenter', (event) => {
-      this.props.showDropdown()
-      this.props.setCurrentDropdown("women")
-    })
-    board.addEventListener('mouseenter', (event) => {
-      this.props.showDropdown()
-      this.props.setCurrentDropdown("board")
-    })
-    ski.addEventListener('mouseenter', (event) => {
-      this.props.showDropdown()
-      this.props.setCurrentDropdown("ski")
-    })
-    logoWrapper.addEventListener('mouseenter', (event) => {
-      this.props.hideDropdown()
-      this.props.setCurrentDropdown("")
-    })
-    rightNav.addEventListener('mouseenter', (event) => {
-      this.props.hideDropdown()
-      this.props.setCurrentDropdown("")
-    })
   }
 
   componentWillUnmount() {
-    const nav = this.refs.nav
-    const menu = this.refs.menu
-    const men = this.refs.men
-    const women = this.refs.women
-    const board = this.refs.board
-    const ski = this.refs.ski
-    const logoWrapper = this.refs['logo-wrapper']
-    const rightNav = this.refs['right-nav']
-    nav.removeEventListener('mouseleave')
-    menu.removeEventListener('mouseenter')
-    men.removeEventListener('mouseenter')
-    women.removeEventListener('mouseenter')
-    board.removeEventListener('mouseenter')
-    ski.removeEventListener('mouseenter')
-    logoWrapper.removeEventListener('mouseenter')
-    rightNav.removeEventListener('mouseenter')
 
   }
 
@@ -137,7 +79,9 @@ class Navigation extends React.Component {
         </div>
         
         <ul ref="right-nav" className="right-nav" onMouseEnter={this.handleDropdownInactive.bind(this)}>
-          <li className="login">Login</li>
+          <Link to="/login">
+            <li className="login">Login</li>
+          </Link>
           <li>Search</li>
           <li className="bag"onClick={this.handleToggleBasket.bind(this)}>{basketMenuItemText}</li>
         </ul>
