@@ -1,19 +1,50 @@
 import React from 'react'
+import {connect} from 'react-redux'
+import {bindActionCreators} from 'redux'
+import * as actionCreators from '../actions/navigationActionCreators'
 
 
-class Basket extends React.Component {
+class MensDropDown extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.handleHideDropdown = this.handleHideDropdown.bind(this)
+  }
+
+  componentDidMount() {
+    const dropdownBackground = this.refs['dropdown-background']
+
+    dropdownBackground.addEventListener('mouseenter', this.handleHideDropdown)
+  }
+
+  componentWillUnmount() {
+    const dropdownBackground = this.refs['dropdown-background']
+    dropdownBackground.removeEventListener('mouseenter', this.handleHideDropdown)
+  }
+
+  handleHideDropdown() {
+    this.props.hideDropdown()
+    this.props.setCurrentDropdown("")
+  }
 
   render() {
     return (
-      <div className="basket-container">
-        <div onClick={this.props.toggleBasket}>
-        </div>
-        <div className="basket">
-        </div>
+      <div className="mens-drop-down">
+        <div className="menu"></div>
+        <div ref="dropdown-background"></div>
+        
       </div>
     )
   }
 
 }
 
-export default Basket
+function mapStateToProps(state) {
+  return state.navigation
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(actionCreators, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(MensDropDown)
