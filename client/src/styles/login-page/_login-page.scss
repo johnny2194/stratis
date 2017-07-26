@@ -1,4 +1,6 @@
 $board-color: #dcf6da;
+$main-blue: #213875;
+$hover-color: #dcf6da;
 
 .login-page {
 	width: 100%;
@@ -33,6 +35,7 @@ $board-color: #dcf6da;
 					align-self: flex-start;
 					margin-left: 66px;
 					font-weight: 800;
+					color: $main-blue;
 
 
 				}
@@ -65,11 +68,30 @@ $board-color: #dcf6da;
 					}
 					
 					&.login-buttons {
-						height: 40px;
+						height: 55px;
+				
+
+
 						.submit-input {
-							height: 40px !important;
+							height: 50px !important;
 							width: 100%;
 							font-size: 1.2em;
+								border-radius: 0;
+							  position: relative;
+							  align-items: flex-start;
+							  margin-top: 10px;
+							  background-color: $main-blue;
+							  border: none;
+							  color: white;
+							  font-size: 16px;
+							  font-weight: 500;
+
+								  &:hover {
+								  background-color: $hover-color;
+								  color: $main-blue;
+
+								  }
+							
 
 							&:focus {
 								outline: none;
