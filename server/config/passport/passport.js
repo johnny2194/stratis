@@ -53,7 +53,7 @@ module.exports = (passport, user) => {
       var User = user;
 
       var isValidPassword = function(userpass, password) {
-        return bCrypt.compareSync(password, userpass);
+        return bcrypt.compareSync(password, userpass);
       }
 
       User.findOne({
