@@ -2,14 +2,17 @@
   background-color: transparent; 
   height: 100px !important;
   width: 100% !important;
-  position: relative;
+  position: relative !important;
   display: flex;
-  position: static;
+  border: solid 1px black !important;
+  margin-top: 14px;
 
   img {
     height: 100px;
     width: 100px;
     position: relative;
+    border: none;
+
 
   }
   
@@ -19,17 +22,23 @@
     width: 20%;
     display: flex;
     flex-direction: column;
-    justify-contents: flex-start;
+    justify-content: flex-start;
+    border: none;
     
 
   
   }
   .price-container {
-    position: absolute;
-    right: 0;
+    position: relative;
     height:100%; 
     width: 20%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    justify-content: flex-start;
+
+    border: none;
+
+
   }
 }
