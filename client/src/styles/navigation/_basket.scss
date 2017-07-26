@@ -32,6 +32,8 @@ $translucent-background: rgba(33, 56, 117, 0.90);
             height: 70%;
             width: 100%;
             overflow: scroll;
+            display: flex;
+            flex-direction: column;
             
           }
 
