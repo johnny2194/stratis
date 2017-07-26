@@ -1,4 +1,7 @@
 $translucent-background: rgba(33, 56, 117, 0.90);
+$main-blue: #213875;
+$hover-color: #dcf6da;
+
 
 .basket-container {
   position: fixed;
@@ -8,6 +11,7 @@ $translucent-background: rgba(33, 56, 117, 0.90);
   z-index: 6;
   width: 100vw;
   background-color: $translucent-background;
+
     
     div {
       right: 0;
@@ -36,6 +40,7 @@ $translucent-background: rgba(33, 56, 117, 0.90);
             flex-direction: column;
             
           }
+          
 
           .summary-checkout-container {
             padding: 10px;
@@ -69,6 +74,7 @@ $translucent-background: rgba(33, 56, 117, 0.90);
                 flex-direction: column;
               }
             }
+            
 
             button {
               position: relative;
@@ -76,6 +82,18 @@ $translucent-background: rgba(33, 56, 117, 0.90);
               margin-bottom: 50px;
               width: 90%;
               height: 49px;
+              background-color: $main-blue;
+              border: none;
+              color: white;
+              font-size: 14px;
+              font-weight: 500;
+
+              &:hover {
+              background-color: $hover-color;
+              color: $main-blue;
+
+              }
+
             }
 
           }
