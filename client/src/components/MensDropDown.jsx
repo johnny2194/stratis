@@ -30,44 +30,50 @@ class MensDropDown extends React.Component {
     return (
       <div className="mens-drop-down">
         <div className="menu">
-          <div>
+          <div className="board-links">
             <Link to="/" className="menu-header">Board</Link>
+            <div className="link-container"> 
               <div className="link-column">
-                <Link to="/" className="sub-header">Hardware</Link>
-                <Link to="/" className="category-product-link">Snowboards</Link>
+                {/*<Link to="/" className="sub-header">Hardware</Link>*/}
+                <Link to="/products?product_category=Binding" className="category-product-link">Snowboards</Link>
                 <Link to="/" className="category-product-link">Bindings</Link>
                 <Link to="/" className="category-product-link">Boots</Link>
                 <Link to="/" className="category-product-link">Helmets</Link>
               </div>
               <div className="link-column">
-                <Link to="/" className="sub-header">Gear</Link>
+                {/*<Link to="/" className="sub-header">Hardware</Link>*/}
                 <Link to="/" className="category-product-link">Jackets</Link>
                 <Link to="/" className="category-product-link">Pants</Link>
               </div>
             </div>
-            <div>
+            </div>
+            <div className="ski-links">
               <Link to="/" className="menu-header">Ski</Link>
+              <div className="link-container">
                 <div className="link-column">
-                  <Link to="/" className="sub-header">Hardware</Link>
+                {/*<Link to="/" className="sub-header">Hardware</Link>*/}
                   <Link to="/" className="category-product-link">Skis</Link>
                   <Link to="/" className="category-product-link">Bindings</Link>
                   <Link to="/" className="category-product-link">Boots</Link>
                   <Link to="/" className="category-product-link">Helmets</Link>
                 </div>
                 <div className="link-column">
-                  <Link to="/" className="sub-header">Gear</Link>
+                {/*<Link to="/" className="sub-header">Hardware</Link>*/}
                   <Link to="/" className="category-product-link">Jackets</Link>
                   <Link to="/" className="category-product-link">Pants</Link>
                 </div>
               </div>
-              <div>
+              </div>
+              <div className="accessories-links">
                 <Link to="/" className="menu-header">Accessories</Link>
+                <div className="link-container">
                   <div className="link-column">
                     <Link to="/" className="category-product-link">Socks</Link>
                     <Link to="/" className="category-product-link">Beanies</Link>
                     <Link to="/" className="category-product-link">Goggles</Link>
                     <Link to="/" className="category-product-link">Gloves</Link>
                   </div>
+                </div>
               </div>
         </div>
         <div ref="dropdown-background" onMouseEnter={this.handleHideDropdown.bind(this)}></div>

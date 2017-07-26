@@ -1,5 +1,7 @@
 $translucent-background: rgba(33, 56, 117, 0.90);
 $mens-color: #DAF0F6;//#6da398
+$main-blue: #213875;
+
 
 
 .mens-drop-down {
@@ -7,31 +9,97 @@ $mens-color: #DAF0F6;//#6da398
   top: 59px;
   height: 100vh;
   z-index: 6;
-  width: 100vw !important;
+  width: 100vw;
   display: flex;
   flex-wrap: wrap;
     div {
       height: 60%;
       z-index: 7;
-      width: 100vw !important;
+      width: 100vw;
       background-color: $translucent-background;
 
       &.menu {
         z-index: 8;
         top: 0;
         height: 50%;
-        width: 100vw !important;
+        width: 100vw;
+        padding-left: 80px;
         background-color: $mens-color;
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
+        align-items: center;
 
-        div {
+        // justify-content: space-around;
+
+        .board-links, .ski-links, .accessories-links {
+          padding: 10px;
           display: flex; 
-          flex-direction: column;
-          background-color: red;
+          flex-flow: row wrap;
+          background-color: transparent;
+          height: 70%;
+          width: 30%;
+          align-items: space-around;
+          border-bottom: none;
 
 
+          .menu-header {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            text-decoration: none;
+            color: $main-blue;
+            font-weight: 700;
+            font-size: 25px;
+          }
+
+          .link-container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            background-color: transparent;
+            width: 100%;
+            border-bottom: none;
+
+
+
+            .link-column {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              width: 15vw;
+              background-color: transparent;
+              border-bottom: none;
+
+
+              .category-product-link{
+                text-decoration: none;
+                color: $main-blue;
+                font-weight: 400;
+                font-size: 16px;
+                padding-bottom: 14px;
+
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+
+          &.accessories-links .link-container {
+            padding: 0;
+            flex-flow: row;
+            justify-content: flex-start;
+            .link-column {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+            }
+          }
         }
+
+
 
       }
       
