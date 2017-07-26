@@ -10,7 +10,7 @@ class ProductPreview extends React.Component {
 					<h3>{product.name}</h3>
 				</Link>
 				<Link to={`/product-view?id=${product.id}`}>
-					<img src={stock_details.image} alt={product.name} />
+					<img src={stock_details[0].image} alt={product.name} />
 				</Link>
 			</div>
 		)

@@ -53,7 +53,7 @@ class Navigation extends React.Component {
  
 
   navStyling() {
-    if (this.props.dropdownActive || this.props.basketVisible || this.props.styling == "navigation navigation-invert") {
+    if (this.props.dropdownActive || this.props.basketVisible || this.props.styling == "navigation navigation-invert" /*|| this.props.location.pathname !== "/"*/) {
       return "navigation navigation-invert"
     } else {
       return "navigation"
