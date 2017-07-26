@@ -1,0 +1,35 @@
+.product-basket-preview {
+  background-color: transparent; 
+  height: 100px !important;
+  width: 100% !important;
+  position: relative;
+  display: flex;
+  position: static;
+
+  img {
+    height: 100px;
+    width: 100px;
+    position: relative;
+
+  }
+  
+  .details-container {
+    position: relative;
+    height:100%; 
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-contents: flex-start;
+    
+
+  
+  }
+  .price-container {
+    position: absolute;
+    right: 0;
+    height:100%; 
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+  }
+}

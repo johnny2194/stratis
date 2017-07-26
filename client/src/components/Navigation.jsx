@@ -6,11 +6,11 @@ import {Link} from 'react-router-dom'
 
 import Basket from './basket'
 import MensDropDown from './MensDropDown'
+import WomensDropDown from './WomensDropDown'
+import BoardDropDown from './BoardDropDown'
+import SkiDropDown from './SkiDropDown'
 
 class Navigation extends React.Component {
-  componentDidMount() {
-    if (this.props.initialStyling) this.props.changeStyling(this.props.initialStyling)
-  }
 
   componentWillUnmount() {
 
@@ -26,16 +26,29 @@ class Navigation extends React.Component {
     this.props.setCurrentDropdown("")
   }
 
-  handleToggleBasket() {
-    this.props.toggleBasket()
-    if (this.props.initialStyling !== 'navigation navigation-invert') {
-      const styling = this.props.styling == 'navigation' ? 'navigation navigation-invert' : 'navigation'
-      this.props.changeStyling(styling)
+  dropDown() {
+    switch (this.props.currentHoverDropdown) {
+      case 'men':
+        return <MensDropDown />
+      case 'women':
+        return <WomensDropDown />
+      case 'board':
+        return <BoardDropDown />
+      case 'ski':
+        return <SkiDropDown />
+      default:
+        return ''
     }
   }
 
+ 
+
   navStyling() {
-    let navStyling
+    if (this.props.dropdownActive || this.props.basketVisible || this.props.styling == "navigation navigation-invert") {
+      return "navigation navigation-invert"
+    } else {
+      return "navigation"
+    }
   }
 
 	render() {
@@ -51,11 +64,7 @@ class Navigation extends React.Component {
     const skiStyling = this.props.currentHoverDropdown == "ski" ? "ski active" : "ski"
 
 
-    const navStyling = () => {
-      if (this.props.dropdownActive) {
-        return "navigation navigation-invert"
-      }
-    }
+    
 
 
     
@@ -63,7 +72,7 @@ class Navigation extends React.Component {
 
 
 		return (
-			<div ref="nav" className={this.props.styling}>
+			<div ref="nav" className={this.navStyling()}>
         <ul>
           <li ref="menu" className="menu fa fa-bars fa-4x" onMouseEnter={this.handleDropdownInactive.bind(this)}></li>
           <li ref="men" className={menStyling} onMouseEnter={this.handleDropdownActive.bind(this, "men")}>Men</li>
@@ -83,10 +92,10 @@ class Navigation extends React.Component {
             <li className="login">Login</li>
           </Link>
           <li>Search</li>
-          <li className="bag"onClick={this.handleToggleBasket.bind(this)}>{basketMenuItemText}</li>
+          <li className="bag"onClick={this.props.toggleBasket}>{basketMenuItemText}</li>
         </ul>
         {basket}
-        {mensDropDown}
+        {this.dropDown()}
       </div>
 		)
 	}
