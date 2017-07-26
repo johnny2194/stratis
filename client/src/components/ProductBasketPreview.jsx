@@ -3,17 +3,19 @@ import {formatPrice} from '../helpers.js'
 
 class ProductBasketPreview extends React.Component {
 	render() {
+    const {product} = this.props
+    console.log(product)
 		return (
 			<div className="product-basket-preview">
          
-         <img src="images/burtonBindingCork.jpeg"></img>
+         <img src={product.image}></img>
          <div className="details-container">
-          <p className="product-name">Product Name</p>
-          <p className="order-details">Blue, M, QTY: 1</p>
+          <p className="product-name">{product.product.name}</p>
+          <p className="order-details">{product.color}, {product.size}, QTY: 1</p>
          </div>
          <div className="price-container">
-           <p className="discount-price">{formatPrice(21000)}</p>
-           <p className="full-price">{formatPrice(30000)}</p>
+           <p className="discount-price">{formatPrice(product.price)}</p>
+           <p className="full-price">{formatPrice(product.price)}</p>
         </div>
       </div>
 		)
