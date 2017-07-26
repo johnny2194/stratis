@@ -1,0 +1,15 @@
+$ski-color: #f4e3d9;
+
+
+
+
+.ski-drop-down {
+
+    div {
+
+      &.menu {
+        
+        background-color: $ski-color !important;
+      }
+    }
+}

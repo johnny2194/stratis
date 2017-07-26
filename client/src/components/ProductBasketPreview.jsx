@@ -5,7 +5,7 @@ class ProductBasketPreview extends React.Component {
 		return (
 			<div className="product-basket-preview">
          
-         <img src={this.props.image}></img>
+         <img src="images/burtonBindingCork.jpeg"></img>
          <div className="details-container">
           <p className="product-name">Product Name</p>
           <p className="order-details">Blue, M, QTY: 1</p>

@@ -1,0 +1,15 @@
+$board-color: #dcf6da;
+
+
+
+
+.board-drop-down {
+
+    div {
+
+      &.menu {
+        
+        background-color: $board-color !important;
+      }
+    }
+}
