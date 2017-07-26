@@ -25,6 +25,9 @@ const defaultState = {
   	fetched: false,
   	stock_details: [],
   	error: null
+  },
+  auth: {
+
   }
 }
 

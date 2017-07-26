@@ -1,0 +1,67 @@
+.signup-page {
+	width: 100%;
+	height: 100vh;
+	background-color: red;
+	.signup-container {
+		display: flex;
+		padding-top: 59px;
+		width: 100%;
+		height: 100%;
+
+		.left-panel {
+			width: 25%;
+			height: 100%;
+			background-color: green;
+		}
+		.signup-form-container {
+			width: 75%;
+			height: 100%;
+			background-color: blue;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.signup-form {
+				width: 80%;
+				height: 60%;
+				display: flex;
+				align-items: space-around;
+				flex-flow: wrap;
+
+				.name-fields, .login-fields {
+					display:flex;
+					justify-content: space-between;
+					width: 100%;
+
+					.first_name-field, .last_name-field, .email-field, .password-field {
+						width: 45%;
+						display: flex;
+						flex-flow: wrap;
+
+						label {
+							width: 100%;
+						}
+
+						.text-input	{
+							width: 100%;
+							height: 40px;
+						}		
+					}
+					
+				}
+
+				.login-buttons {
+					width: 100%;
+					button {
+						width: 45%;
+						border-radius: 0;
+						height: 40px;
+					}
+				}
+				
+			}
+
+
+		}
+	}
+}
