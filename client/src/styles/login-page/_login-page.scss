@@ -1,3 +1,7 @@
+$board-color: #dcf6da;
+$main-blue: #213875;
+$hover-color: #dcf6da;
+
 .login-page {
 	width: 100%;
 	height: 100vh;
@@ -5,14 +9,13 @@
 	.page-container {
 		width: 100%;
 		height: 100%;
-		background-color: red;
 		padding-top: 59px;
 		display: flex;
 		
 		.login-form {
-			height: 100%;
+			height: 70%;
 			width: 50%;
-			background-color: green;
+			// background-color: $board-color;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -21,20 +24,27 @@
 				display: flex;
 				width: 60%;
 				height: 70%;
-				background-color: gold;
+				// background-color: gold;
 				display: flex;
 				flex-flow: column;
 				justify-content: space-around;
 				align-items: center;
 
 				h2 {
-					font-size: 2em;
+					font-size: 3.5em;
+					align-self: flex-start;
+					margin-left: 66px;
+					font-weight: 800;
+					color: $main-blue;
+
+
 				}
 
 				div {
-					background-color: wheat;
+					// background-color: wheat;
 					height: 100px;
-					width: 90%;
+					width: 70%;
+
 
 
 					&.email-field, &.password-field {
@@ -58,11 +68,30 @@
 					}
 					
 					&.login-buttons {
-						height: 40px;
+						height: 55px;
+				
+
+
 						.submit-input {
-							height: 40px !important;
+							height: 50px !important;
 							width: 100%;
 							font-size: 1.2em;
+								border-radius: 0;
+							  position: relative;
+							  align-items: flex-start;
+							  margin-top: 10px;
+							  background-color: $main-blue;
+							  border: none;
+							  color: white;
+							  font-size: 16px;
+							  font-weight: 500;
+
+								  &:hover {
+								  background-color: $hover-color;
+								  color: $main-blue;
+
+								  }
+							
 
 							&:focus {
 								outline: none;
@@ -78,7 +107,7 @@
 		.signup-container {
 			height: 100%;
 			width: 50%;
-			background-color: blue;
+			background-color:  $board-color;
 		}
 	} 
 }

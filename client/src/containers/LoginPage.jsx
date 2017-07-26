@@ -35,7 +35,7 @@ class LoginPage extends React.Component {
 	render() {
 		return (
 			<div className="login-page">
-				<Navigation styling="navigation navigation-invert" />
+				<Navigation styling="navigation navigation-invert"/>
 				<div className="page-container">
 					<div className="login-form">
 						<div>

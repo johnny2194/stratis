@@ -1,7 +1,11 @@
+$board-color: #dcf6da;
+$main-blue: #213875;
+$hover-color: #dcf6da;
+
 .signup-page {
 	width: 100%;
 	height: 100vh;
-	background-color: red;
+	// background-color: red;
 	.signup-container {
 		display: flex;
 		padding-top: 59px;
@@ -11,12 +15,12 @@
 		.left-panel {
 			width: 25%;
 			height: 100%;
-			background-color: green;
+			// background-color: green;
 		}
 		.signup-form-container {
 			width: 75%;
 			height: 100%;
-			background-color: blue;
+			background-color: $board-color;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -55,7 +59,21 @@
 					button {
 						width: 45%;
 						border-radius: 0;
-						height: 40px;
+					  position: relative;
+					  align-items: flex-start;
+					  margin-bottom: 10px;
+					  height: 49px;
+					  background-color: $main-blue;
+					  border: none;
+					  color: white;
+					  font-size: 16px;
+					  font-weight: 500;
+
+						  &:hover {
+						  // background-color: $hover-color;
+						  // color: $main-blue;
+
+						  }
 					}
 				}
 				
