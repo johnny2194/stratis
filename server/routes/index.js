@@ -13,7 +13,7 @@ function isLoggedIn(req, res, next) {
 module.exports = (app, passport) => {
 	// AUTHENTICATION ROUTES
 	app.post('/login', passport.authenticate('local-signin', {
-      successRedirect: '/profile',
+      successRedirect: '/login-success',
       failureRedirect: '/login'
   }));
   app.post('/signup', passport.authenticate('local-signup', {
@@ -21,8 +21,10 @@ module.exports = (app, passport) => {
       failureRedirect: '/signup'
   }));
   app.get('/logout', authController.logout);
-  app.get('/signup-success', authController.signup);
+  app.get('/login-success', authController.returnUser);
+  app.get('/signup-success', authController.returnUser);
 	app.get('/profile', isLoggedIn, authController.profile);
+	app.get('/check-validation', authController.checkValidation)
 
 
 	// USER ROUTES
