@@ -9,6 +9,7 @@ class SignupPage extends React.Component {
 		super(props)
 	}
 
+
 	signUp() {
 
 		const signupDetails = {
@@ -19,6 +20,17 @@ class SignupPage extends React.Component {
 		}
 
 		this.props.signup(signupDetails)
+	}
+
+	componentWillReceiveProps(nextProps) {
+		this.checkSignedInStatus(nextProps)
+		
+	}
+
+	checkSignedInStatus(props) {
+		if (props.user) {
+			this.props.history.push('/profile')
+		}
 	}
 
 	render() {
@@ -63,7 +75,7 @@ class SignupPage extends React.Component {
 }
 
 function mapStateToProps(state, router) {
-	return Object.assign({}, state.user, router)
+	return Object.assign({}, state.auth, router)
 }
 
 function mapDispatchToProps(dispatch) {

@@ -17,10 +17,11 @@ module.exports = (app, passport) => {
       failureRedirect: '/login'
   }));
   app.post('/signup', passport.authenticate('local-signup', {
-      successRedirect: '/profile',
+      successRedirect: '/signup-success',
       failureRedirect: '/signup'
   }));
   app.get('/logout', authController.logout);
+  app.get('/signup-success', authController.signup);
 	app.get('/profile', isLoggedIn, authController.profile);
 
 

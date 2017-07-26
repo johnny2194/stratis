@@ -27,7 +27,7 @@ const defaultState = {
   	error: null
   },
   auth: {
-
+    user: null
   }
 }
 
