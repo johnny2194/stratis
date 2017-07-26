@@ -62,7 +62,7 @@ class Navigation extends React.Component {
 
 	render() {
     const basket = this.props.basketVisible ? <Basket toggleBasket={this.props.toggleBasket}/> : ''
-    const basketMenuItemText = this.props.basketVisible ? 'Close' : 'Bag 0'
+    const basketMenuItemText = this.props.basketVisible ? 'Close' : `Bag ${this.props.basket.length}`
     const mensDropDown = this.props.dropdownActive ? <MensDropDown currentDropdown={this.props.currentHoverDropdown} /> : ''
 
 
@@ -111,7 +111,7 @@ class Navigation extends React.Component {
 
 // this is taking the navigation portion of state and attaching it to the Navigation's props
 function mapStateToProps(state, routing) {
-  return Object.assign({}, state.navigation, state.auth, routing)
+  return Object.assign({}, state.navigation, state.auth, state.basket, routing)
 }
 
 // this is attaching our actions to the Navigation component
