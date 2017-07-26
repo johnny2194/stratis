@@ -1,4 +1,6 @@
 $translucent-background: rgba(33, 56, 117, 0.90);
+$mens-color: #DAF0F6;//#6da398
+
 
 .mens-drop-down {
   position: fixed;
@@ -17,9 +19,20 @@ $translucent-background: rgba(33, 56, 117, 0.90);
       &.menu {
         z-index: 8;
         top: 0;
-        height: 40%;
+        height: 50%;
         width: 100vw !important;
-        background-color: #fff;
+        background-color: $mens-color;
+        display: flex;
+        justify-content: space-around;
+
+        div {
+          display: flex; 
+          flex-direction: column;
+          background-color: red;
+
+
+        }
+
       }
       
     }
