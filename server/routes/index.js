@@ -3,23 +3,28 @@ const productsController = require('../controllers').products
 const stock_detailsController = require('../controllers').stock_details
 const ordersController = require('../controllers').orders
 const purchasesController = require('../controllers').purchases
+const authController = require('../controllers').auth
 
 function isLoggedIn(req, res, next) {
-    // if user is authenticated in the session, carry on 
-    if (req.isAuthenticated()) return next();
-    // if they aren't redirect them to the home page
-    res.redirect('/');
+    if (req.isAuthenticated()) return next()
+    res.redirect('/login')
 }
 
 module.exports = (app, passport) => {
 	// AUTHENTICATION ROUTES
-	app.get('/login', function(req, res) {
-    res.send({ message: 'login' })
-  });
-  app.get('/signup', function(req, res) {
-		res.send({ message: 'signup' })
-  });
+	app.get('/login', authController.login);
+	app.post('/login', passport.authenticate('local-signin', {
+      successRedirect: '/profile',
+      failureRedirect: '/login'
+  }));
 
+  app.get('/signup', authController.signup);
+  app.post('/signup', passport.authenticate('local-signup', {
+      successRedirect: '/profile',
+      failureRedirect: '/signup'
+  }));
+  app.get('/logout', authController.logout);
+	app.get('/profile', isLoggedIn, authController.profile);
 
 
 	// USER ROUTES

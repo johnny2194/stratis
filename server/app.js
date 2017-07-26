@@ -7,8 +7,13 @@ const session = require('express-session')
 const cookieParser = require('cookie-parser')
 const passport = require('passport')
 const flash = require('connect-flash')
+const models = require("./models");
 
-// require('./config/passport')(passport); // pass passport for configuration
+models.sequelize.sync().then(() => {
+    console.log('Nice! Database looks fine')
+}).catch((err) => {
+    console.log(err, "Something went wrong with the Database Update!")
+});
 
 app.use(logger('dev'))
 app.use(bodyParser.json());
@@ -23,6 +28,7 @@ app.use(passport.session());
 app.use(flash());
 
 
+require('./config/passport/passport')(passport, models.User); 
 require('./routes')(app, passport);
 app.get('*', (req, res) => {
 	res.sendFile(path.join(__dirname, '../client/build/index.html'))

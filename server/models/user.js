@@ -1,5 +1,6 @@
 'use strict';
 const models = require('./index')
+const bcrypt = require('bcrypt-nodejs')
 
 
 module.exports = function(sequelize, DataTypes) {
@@ -26,6 +27,14 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     }
   }, {
+    instanceMethods: {
+      generateHash: function(password) {
+        return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
+      },
+      validPassword: function(password) {
+        return bcrypt.compareSync(password, this.password);
+      },
+    },
     classMethods: {
       associate: function(models) {
         // associations can be defined here
