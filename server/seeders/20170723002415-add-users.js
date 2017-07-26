@@ -12,7 +12,7 @@ module.exports = {
         first_name: 'Eoghan',
         last_name: 'Crowley',
         email: 'eoghanscrowley@gmail.com',
-        password: '123dogs',
+        password: '$2a$08$o/t85yiFQE9GLjZCCKQw1ua7UGz0mrAL.00jznGIDPD4SetM.0HCi',
         gender: 'male',
         createdAt: new Date(),
         updatedAt: new Date()

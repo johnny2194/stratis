@@ -41,6 +41,15 @@ class Navigation extends React.Component {
     }
   }
 
+  loginButton() {
+    if (this.props.user) {
+      console.log('user is validated')
+      return (<Link to="/profile"><li className="login">{this.props.user.first_name}</li></Link>)
+    } else {
+      return (<Link to="/login"><li className="login">Login</li></Link>)
+    }
+  }
+
  
 
   navStyling() {
@@ -88,9 +97,7 @@ class Navigation extends React.Component {
         </div>
         
         <ul ref="right-nav" className="right-nav" onMouseEnter={this.handleDropdownInactive.bind(this)}>
-          <Link to="/login">
-            <li className="login">Login</li>
-          </Link>
+          {this.loginButton()}
           <li>Search</li>
           <li className="bag"onClick={this.props.toggleBasket}>{basketMenuItemText}</li>
         </ul>
@@ -103,8 +110,8 @@ class Navigation extends React.Component {
 
 
 // this is taking the navigation portion of state and attaching it to the Navigation's props
-function mapStateToProps(state) {
-  return Object.assign({}, state.navigation,  state.routing)
+function mapStateToProps(state, routing) {
+  return Object.assign({}, state.navigation, state.auth, routing)
 }
 
 // this is attaching our actions to the Navigation component

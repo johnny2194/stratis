@@ -6,6 +6,7 @@ import { render } from 'react-dom'
 import css from './styles/style.scss'
 
 // import components
+import Validation from './components/Validation'
 import Navigation from './components/Navigation'
 import LandingPage from './containers/LandingPage'
 import ProductsPage from './containers/ProductsPage'
@@ -28,6 +29,7 @@ const router = (
   <Provider store={store}>
 		<Router history={history}>
 			<div>
+				<Route path="/" component={Validation} />
 				<Route exact path="/" component={LandingPage} />
 				<Route path="/products" component={ProductsPage} />
 				<Route path="/product-view" component={ProductView} />
