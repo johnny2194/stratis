@@ -3,8 +3,30 @@ const productsController = require('../controllers').products
 const stock_detailsController = require('../controllers').stock_details
 const ordersController = require('../controllers').orders
 const purchasesController = require('../controllers').purchases
+const authController = require('../controllers').auth
 
-module.exports = (app) => {
+function isLoggedIn(req, res, next) {
+    if (req.isAuthenticated()) return next()
+    res.redirect('/login')
+}
+
+module.exports = (app, passport) => {
+	// AUTHENTICATION ROUTES
+	app.get('/login', authController.login);
+	app.post('/login', passport.authenticate('local-signin', {
+      successRedirect: '/profile',
+      failureRedirect: '/login'
+  }));
+
+  app.get('/signup', authController.signup);
+  app.post('/signup', passport.authenticate('local-signup', {
+      successRedirect: '/profile',
+      failureRedirect: '/signup'
+  }));
+  app.get('/logout', authController.logout);
+	app.get('/profile', isLoggedIn, authController.profile);
+
+
 	// USER ROUTES
 	app.post('/api/users', usersController.create)
 	app.get('/api/users', usersController.index)
