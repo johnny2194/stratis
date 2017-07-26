@@ -36,7 +36,7 @@ class SignupPage extends React.Component {
 	render() {
 		return (
 			<div className="signup-page">
-				<Navigation />
+				<Navigation initialStyling="navigation navigation-invert"/>
 				<div className="signup-container">
 					<div className="left-panel"></div>
 					<div className="signup-form-container">

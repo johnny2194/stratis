@@ -1,3 +1,5 @@
+$board-color: #dcf6da;
+
 .login-page {
 	width: 100%;
 	height: 100vh;
@@ -5,14 +7,13 @@
 	.page-container {
 		width: 100%;
 		height: 100%;
-		background-color: red;
 		padding-top: 59px;
 		display: flex;
 		
 		.login-form {
-			height: 100%;
+			height: 70%;
 			width: 50%;
-			background-color: green;
+			// background-color: $board-color;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -21,20 +22,26 @@
 				display: flex;
 				width: 60%;
 				height: 70%;
-				background-color: gold;
+				// background-color: gold;
 				display: flex;
 				flex-flow: column;
 				justify-content: space-around;
 				align-items: center;
 
 				h2 {
-					font-size: 2em;
+					font-size: 3.5em;
+					align-self: flex-start;
+					margin-left: 66px;
+					font-weight: 800;
+
+
 				}
 
 				div {
-					background-color: wheat;
+					// background-color: wheat;
 					height: 100px;
-					width: 90%;
+					width: 70%;
+
 
 
 					&.email-field, &.password-field {
@@ -78,7 +85,7 @@
 		.signup-container {
 			height: 100%;
 			width: 50%;
-			background-color: blue;
+			background-color:  $board-color;
 		}
 	} 
 }
