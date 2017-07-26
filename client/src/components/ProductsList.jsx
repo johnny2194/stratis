@@ -13,11 +13,9 @@ class ProductsList extends React.Component {
 	}
 
 	render() {
-		const {stock_details} = this.props
-	
-		
-
-		const productPreviews = stock_details.map((stock_details) => <ProductPreview key={stock_details.id} product={stock_details.product} stock_details={stock_details} />)
+		const {products} = this.props
+		console.log(this.props)
+		const productPreviews = products.map((product) => <ProductPreview key={product.id} product={product} stock_details={product.stock_details} />)
 
 		return (
 			<div className="products-list">

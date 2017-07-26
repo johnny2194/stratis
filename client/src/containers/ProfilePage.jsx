@@ -23,6 +23,7 @@ class ProfilePage extends React.Component {
 	render() {
 		return (
 			<div className="profile-page">
+				<Navigation styling="navigation navigation-invert" />
 				<h1>PROFILE PAGE!!!!!</h1>
       </div>
 		)

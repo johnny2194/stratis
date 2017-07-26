@@ -20,7 +20,7 @@ class ProductsPage extends React.Component {
 	render() {
 		return (
 			<div className="products-page">
-      	<Navigation initialStyling="navigation navigation-invert"/>
+      	<Navigation styling="navigation navigation-invert"/>
       	<div className="products-container">
 	      	<FilterBar />
 	      	<ProductsList />
