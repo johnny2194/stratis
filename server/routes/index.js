@@ -12,18 +12,16 @@ function isLoggedIn(req, res, next) {
 
 module.exports = (app, passport) => {
 	// AUTHENTICATION ROUTES
-	app.get('/login', authController.login);
 	app.post('/login', passport.authenticate('local-signin', {
       successRedirect: '/profile',
       failureRedirect: '/login'
   }));
-
-  app.get('/signup', authController.signup);
   app.post('/signup', passport.authenticate('local-signup', {
-      successRedirect: '/profile',
+      successRedirect: '/signup-success',
       failureRedirect: '/signup'
   }));
   app.get('/logout', authController.logout);
+  app.get('/signup-success', authController.signup);
 	app.get('/profile', isLoggedIn, authController.profile);
 
 
