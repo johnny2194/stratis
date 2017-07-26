@@ -13,16 +13,23 @@ class ProductView extends React.Component {
 			const keyAndValue = queryString.split('=')
 			queryObject[keyAndValue[0]] = Number(keyAndValue[1])
 		})
-		console.log(queryObject)
 		this.props.fetchSingleProduct(queryObject.id)
 	}
 
+	createProductContainer() {
+		if (this.props.current_product) {
+			
+		}
+	}
+
 	render() {
-		if (this.props.current_product) console.log(this.props.current_product)
+
 		return (
 			<div className="product-view">
 				<Navigation />
-				<div className="product-view-container"></div>
+				<div className="product-view-container">
+					<img src={product.stock_details[0].image} alt="product image"/>
+				</div>
 			</div>
 		)
 	}
