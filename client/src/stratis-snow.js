@@ -13,6 +13,7 @@ import LoginPage from './containers/LoginPage'
 import TestPage from './containers/TestPage'
 import SignupPage from './containers/SignupPage'
 import ProfilePage from './containers/ProfilePage'
+import ProductView from './containers/ProductView'
 
 // import react router deps
 import { Router, Route } from 'react-router'
@@ -29,6 +30,7 @@ const router = (
 			<div>
 				<Route exact path="/" component={LandingPage} />
 				<Route path="/products" component={ProductsPage} />
+				<Route path="/product-view" component={ProductView} />
         <Route path="/login" component={LoginPage} />
 				<Route path="/test" component={TestPage} />
 				<Route path="/signup" component={SignupPage}/>
