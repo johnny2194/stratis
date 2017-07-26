@@ -31,11 +31,11 @@ class BoardDropDown extends React.Component {
       <div className="mens-drop-down board-drop-down">
         <div className="menu">
           <div className="board-links">
-            <Link to="/" className="menu-header">Board</Link>
+            <Link to="/" className="menu-header">Mens</Link>
             <div className="link-container"> 
               <div className="link-column">
                 {/*<Link to="/" className="sub-header">Hardware</Link>*/}
-                <Link to="/products?product_category=Binding" className="category-product-link">Snowboards</Link>
+                <Link to="/products?" className="category-product-link">Boards</Link>
                 <Link to="/" className="category-product-link">Bindings</Link>
                 <Link to="/" className="category-product-link">Boots</Link>
                 <Link to="/" className="category-product-link">Helmets</Link>
@@ -48,11 +48,11 @@ class BoardDropDown extends React.Component {
             </div>
             </div>
             <div className="ski-links">
-              <Link to="/" className="menu-header">Ski</Link>
+              <Link to="/" className="menu-header">Womens</Link>
               <div className="link-container">
                 <div className="link-column">
                 {/*<Link to="/" className="sub-header">Hardware</Link>*/}
-                  <Link to="/" className="category-product-link">Skis</Link>
+                  <Link to="/" className="category-product-link">Boards</Link>
                   <Link to="/" className="category-product-link">Bindings</Link>
                   <Link to="/" className="category-product-link">Boots</Link>
                   <Link to="/" className="category-product-link">Helmets</Link>
@@ -68,10 +68,8 @@ class BoardDropDown extends React.Component {
                 <Link to="/" className="menu-header">Accessories</Link>
                 <div className="link-container">
                   <div className="link-column">
-                    <Link to="/" className="category-product-link">Socks</Link>
-                    <Link to="/" className="category-product-link">Beanies</Link>
-                    <Link to="/" className="category-product-link">Goggles</Link>
-                    <Link to="/" className="category-product-link">Gloves</Link>
+                    <Link to="/" className="category-product-link">Wax</Link>
+                    <Link to="/" className="category-product-link">Tools</Link>
                   </div>
                 </div>
               </div>

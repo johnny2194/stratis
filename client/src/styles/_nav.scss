@@ -21,6 +21,8 @@ $ski-color: #f4e3d9;
 	z-index: 10;
 
 
+
+
 	div {
 		width: 100%;
 		justify-content: space-around;
@@ -59,6 +61,17 @@ $ski-color: #f4e3d9;
 	
 		&.right-nav {
 			justify-content: flex-end;
+
+			.login {
+			  color: white;
+			  text-decoration: none !important;
+
+			  &.login:hover{
+			  		background-color: white;
+			  		color: $main-blue;		
+			  		bottom-border: white !important;
+			  }
+			}
 
 			li {
 				width: 128px !important;
@@ -148,10 +161,7 @@ $ski-color: #f4e3d9;
 				}
 			}
 
-			&.login:hover{
-					background-color: white;
-					color: $main-blue;		
-			}
+			
 
 			&:hover {
 				cursor: pointer;	
@@ -162,20 +172,3 @@ $ski-color: #f4e3d9;
 
 }
 
-.example-enter {
-  opacity: 0.01;
-}
-
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-
-.example-leave {
-  opacity: 1;
-}
-
-.example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
-}
