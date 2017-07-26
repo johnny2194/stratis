@@ -6,7 +6,7 @@ module.exports = {
       {
         color: 'Black / Blue',
         size: '156',
-        price: 475,
+        price: 47500,
         stock_level: 10,
         productId: 1,
         discount: null,
@@ -17,7 +17,7 @@ module.exports = {
       {
         color: 'Multi',
         size: '164',
-        price: 629,
+        price: 62900,
         stock_level: 10,
         productId: 2,
         discount: null,
@@ -28,7 +28,7 @@ module.exports = {
       {
         color: 'Multi',
         size: '184',
-        price: 629,
+        price: 62900,
         stock_level: 5,
         productId: 2,
         discount: null,
@@ -39,7 +39,7 @@ module.exports = {
       {
         color: 'Multi',
         size: '190',
-        price: 629,
+        price: 62900,
         stock_level: 0,
         productId: 2,
         discount: null,
@@ -50,7 +50,7 @@ module.exports = {
       {
         color: 'Blue',
         size: '156',
-        price: 580,
+        price: 58000,
         stock_level: 10,
         productId: 3,
         discount: null,
@@ -61,7 +61,7 @@ module.exports = {
       {
         color: 'Blue',
         size: '160',
-        price: 580,
+        price: 58000,
         stock_level: 10,
         productId: 3,
         discount: null,
@@ -72,7 +72,7 @@ module.exports = {
       {
         color: 'Multi',
         size: '164',
-        price: 629,
+        price: 62900,
         stock_level: 10,
         productId: 4,
         discount: null,
@@ -83,7 +83,7 @@ module.exports = {
       {
         color: 'Multi',
         size: '184',
-        price: 629,
+        price: 62900,
         stock_level: 5,
         productId: 4,
         discount: null,
@@ -94,7 +94,7 @@ module.exports = {
       {
         color: 'Multi',
         size: '190',
-        price: 629,
+        price: 62900,
         stock_level: 0,
         productId: 4,
         discount: null,
@@ -103,42 +103,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        color: 'Black',
-        size: 'S',
-        price: 245,
-        stock_level: 10,
-        productId: 5,
-        discount: null,
-        image: "images/burtonBindingBlack.jpeg",
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        color: 'Black',
-        size: 'M',
-        price: 245,
-        stock_level: 10,
-        productId: 5,
-        discount: null,
-        image: "images/burtonBindingBlack.jpeg",
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        color: 'Black',
-        size: 'L',
-        price: 245,
-        stock_level: 10,
-        productId: 5,
-        discount: null,
-        image: "images/burtonBindingBlack.jpeg",
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
         color: 'Cork',
         size: 'S',
-        price: 245,
+        price: 24500,
         stock_level: 10,
         productId: 5,
         discount: null,
@@ -149,7 +116,7 @@ module.exports = {
       {
         color: 'Cork',
         size: 'M',
-        price: 245,
+        price: 24500,
         stock_level: 10,
         productId: 5,
         discount: null,
@@ -160,7 +127,7 @@ module.exports = {
       {
         color: 'Cork',
         size: 'L',
-        price: 245,
+        price: 24500,
         stock_level: 10,
         productId: 5,
         discount: null,
@@ -169,9 +136,42 @@ module.exports = {
         updatedAt: new Date()
       },
       {
+        color: 'Black',
+        size: 'S',
+        price: 24500,
+        stock_level: 10,
+        productId: 5,
+        discount: null,
+        image: "images/burtonBindingBlack.jpeg",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Black',
+        size: 'M',
+        price: 24500,
+        stock_level: 10,
+        productId: 5,
+        discount: null,
+        image: "images/burtonBindingBlack.jpeg",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        color: 'Black',
+        size: 'L',
+        price: 24500,
+        stock_level: 10,
+        productId: 5,
+        discount: null,
+        image: "images/burtonBindingBlack.jpeg",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
         color: 'Grey',
         size: 'S',
-        price: 245,
+        price: 24500,
         stock_level: 10,
         productId: 5,
         discount: null,
@@ -182,7 +182,7 @@ module.exports = {
       {
         color: 'Grey',
         size: 'M',
-        price: 245,
+        price: 24500,
         stock_level: 10,
         productId: 5,
         discount: null,
@@ -193,7 +193,7 @@ module.exports = {
       {
         color: 'Grey',
         size: 'L',
-        price: 245,
+        price: 24500,
         stock_level: 10,
         productId: 5,
         discount: null,
@@ -204,7 +204,7 @@ module.exports = {
       {
         color: 'Red',
         size: 'S',
-        price: 245,
+        price: 24500,
         stock_level: 10,
         productId: 5,
         discount: null,
@@ -215,7 +215,7 @@ module.exports = {
       {
         color: 'Red',
         size: 'M',
-        price: 245,
+        price: 24500,
         stock_level: 10,
         productId: 5,
         discount: null,
@@ -226,7 +226,7 @@ module.exports = {
       {
         color: 'Red',
         size: 'L',
-        price: 245,
+        price: 24500,
         stock_level: 10,
         productId: 5,
         discount: null,
@@ -237,7 +237,7 @@ module.exports = {
       {
         color: 'Black',
         size: 'S',
-        price: 245,
+        price: 24500,
         stock_level: 10,
         productId: 5,
         discount: null,
@@ -248,7 +248,7 @@ module.exports = {
       {
         color: 'Black',
         size: 'M',
-        price: 245,
+        price: 24500,
         stock_level: 10,
         productId: 5,
         discount: null,
@@ -259,7 +259,7 @@ module.exports = {
       {
         color: 'Black',
         size: 'L',
-        price: 245,
+        price: 24500,
         stock_level: 10,
         productId: 5,
         discount: null,
@@ -270,7 +270,7 @@ module.exports = {
       {
         color: 'Blue',
         size: 'XS',
-        price: 135,
+        price: 13500,
         stock_level: 10,
         productId: 6,
         discount: null,
@@ -281,7 +281,7 @@ module.exports = {
       {
         color: 'Blue',
         size: 'S',
-        price: 135,
+        price: 13500,
         stock_level: 10,
         productId: 6,
         discount: null,
@@ -292,7 +292,7 @@ module.exports = {
       {
         color: 'Blue',
         size: 'M',
-        price: 135,
+        price: 13500,
         stock_level: 10,
         productId: 6,
         discount: null,
@@ -303,7 +303,7 @@ module.exports = {
       {
         color: 'Blue',
         size: 'L',
-        price: 135,
+        price: 13500,
         stock_level: 10,
         productId: 6,
         discount: null,
@@ -314,7 +314,7 @@ module.exports = {
       {
         color: 'Blue',
         size: 'XL',
-        price: 135,
+        price: 13500,
         stock_level: 10,
         productId: 6,
         discount: null,
@@ -325,7 +325,7 @@ module.exports = {
       {
         color: 'Brown',
         size: 'XS',
-        price: 135,
+        price: 13500,
         stock_level: 10,
         productId: 6,
         discount: null,
@@ -336,7 +336,7 @@ module.exports = {
       {
         color: 'Brown',
         size: 'S',
-        price: 135,
+        price: 13500,
         stock_level: 10,
         productId: 6,
         discount: null,
@@ -347,7 +347,7 @@ module.exports = {
       {
         color: 'Brown',
         size: 'M',
-        price: 135,
+        price: 13500,
         stock_level: 10,
         productId: 6,
         discount: null,
@@ -358,7 +358,7 @@ module.exports = {
       {
         color: 'Brown',
         size: 'L',
-        price: 135,
+        price: 13500,
         stock_level: 10,
         productId: 6,
         discount: null,
@@ -369,7 +369,7 @@ module.exports = {
       {
         color: 'Brown',
         size: 'XL',
-        price: 135,
+        price: 13500,
         stock_level: 10,
         productId: 6,
         discount: null,
@@ -380,7 +380,7 @@ module.exports = {
       {
         color: 'Blue',
         size: 'XS',
-        price: 220,
+        price: 22000,
         stock_level: 5,
         productId: 7,
         discount: null,
@@ -391,7 +391,7 @@ module.exports = {
       {
         color: 'Blue',
         size: 'S',
-        price: 220,
+        price: 22000,
         stock_level: 5,
         productId: 7,
         discount: null,
@@ -402,7 +402,7 @@ module.exports = {
       {
         color: 'Blue',
         size: 'M',
-        price: 220,
+        price: 22000,
         stock_level: 5,
         productId: 7,
         discount: null,
@@ -413,7 +413,7 @@ module.exports = {
       {
         color: 'Blue',
         size: 'L',
-        price: 220,
+        price: 22000,
         stock_level: 5,
         productId: 7,
         discount: null,
@@ -424,7 +424,7 @@ module.exports = {
       {
         color: 'Blue',
         size: 'XL',
-        price: 220,
+        price: 22000,
         stock_level: 5,
         productId: 7,
         discount: null,
@@ -435,7 +435,7 @@ module.exports = {
       {
         color: 'Brown',
         size: 'XS',
-        price: 220,
+        price: 22000,
         stock_level: 5,
         productId: 7,
         discount: null,
@@ -446,7 +446,7 @@ module.exports = {
       {
         color: 'Brown',
         size: 'S',
-        price: 220,
+        price: 22000,
         stock_level: 5,
         productId: 7,
         discount: null,
@@ -457,7 +457,7 @@ module.exports = {
       {
         color: 'Brown',
         size: 'M',
-        price: 220,
+        price: 22000,
         stock_level: 5,
         productId: 7,
         discount: null,
@@ -468,7 +468,7 @@ module.exports = {
       {
         color: 'Brown',
         size: 'L',
-        price: 220,
+        price: 22000,
         stock_level: 5,
         productId: 7,
         discount: null,
@@ -479,7 +479,7 @@ module.exports = {
       {
         color: 'Brown',
         size: 'XL',
-        price: 220,
+        price: 22000,
         stock_level: 5,
         productId: 7,
         discount: null,
@@ -490,7 +490,7 @@ module.exports = {
       {
         color: 'Maroon / Blue',
         size: '145',
-        price: 415,
+        price: 41500,
         stock_level: 5,
         productId: 8,
         discount: null,
@@ -501,7 +501,7 @@ module.exports = {
       {
         color: 'Maroon / Blue',
         size: '150',
-        price: 415,
+        price: 41500,
         stock_level: 5,
         productId: 8,
         discount: null,
@@ -512,7 +512,7 @@ module.exports = {
       {
         color: 'Multi',
         size: '138',
-        price: 325,
+        price: 32500,
         stock_level: 5,
         productId: 9,
         discount: null,
@@ -523,7 +523,7 @@ module.exports = {
       {
         color: 'Multi',
         size: '141',
-        price: 325,
+        price: 32500,
         stock_level: 5,
         productId: 9,
         discount: null,
@@ -534,7 +534,7 @@ module.exports = {
       {
         color: 'Multi',
         size: '146',
-        price: 325,
+        price: 32500,
         stock_level: 5,
         productId: 9,
         discount: null,
@@ -545,7 +545,7 @@ module.exports = {
       {
         color: 'Multi',
         size: '149',
-        price: 325,
+        price: 32500,
         stock_level: 5,
         productId: 9,
         discount: null,
@@ -556,7 +556,7 @@ module.exports = {
       {
         color: 'Multi',
         size: '162',
-        price: 545,
+        price: 54500,
         stock_level: 10,
         productId: 10,
         discount: null,
@@ -567,7 +567,7 @@ module.exports = {
       {
         color: 'Multi',
         size: '172',
-        price: 545,
+        price: 54500,
         stock_level: 10,
         productId: 10,
         discount: null,
@@ -578,7 +578,7 @@ module.exports = {
       {
         color: 'Multi',
         size: '168',
-        price: 545,
+        price: 54500,
         stock_level: 10,
         productId: 11,
         discount: null,
@@ -589,7 +589,7 @@ module.exports = {
       {
         color: 'Multi',
         size: '178',
-        price: 545,
+        price: 54500,
         stock_level: 10,
         productId: 11,
         discount: null,
