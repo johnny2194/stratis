@@ -1,4 +1,5 @@
 import React from 'react'
+import {formatPrice} from '../helpers.js'
 
 class ProductBasketPreview extends React.Component {
 	render() {
@@ -13,8 +14,8 @@ class ProductBasketPreview extends React.Component {
           <p className="order-details">{product.color}, {product.size}, QTY: 1</p>
          </div>
          <div className="price-container">
-           <p className="discount-price">£{product.price / 100}</p>
-           <p className="full-price">£{product.price / 100}</p>
+           <p className="discount-price">{formatPrice(product.price)}</p>
+           <p className="full-price">{formatPrice(product.price)}</p>
         </div>
       </div>
 		)

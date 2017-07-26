@@ -24,6 +24,20 @@ $invert-white: #ffffff;
   ul {
   
     &.right-nav {
+      .login {
+        color: $main-blue;
+        text-decoration: none !important;
+
+        &.login:hover{
+            // background-color: white;
+            color: $main-blue;    
+            border-bottom: solid 1px $invert-white;    
+          
+          li {
+            border-bottom: none;
+          }
+        }
+      }
     }
 
     li {
@@ -46,10 +60,6 @@ $invert-white: #ffffff;
           color: $main-blue;
           background-color: rgba(255,255,255,0.0);    
         }
-      }
-
-      &.login:hover{
-        border-bottom: solid 1px $invert-white;    
       }
 
       &.ski{

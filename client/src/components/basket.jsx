@@ -1,6 +1,8 @@
 import React from 'react'
 import ScrollLock from 'react-scrolllock';
 import ProductBasketPreview from './ProductBasketPreview'
+import {formatPrice} from '../helpers.js'
+
 
 import {connect} from 'react-redux'
 import * as actionCreators from '../actions/basketActionCreators'
@@ -26,12 +28,12 @@ class Basket extends React.Component {
          <div className="summary-checkout-container">
            <div className="text-summary-container">
               <div className="left-text">
-                <p>SHIPPING</p>
-                <p>TOTAL</p>
+                <p className="shipping">SHIPPING</p>
+                <p className="total">ORDER TOTAL</p>
               </div>
               <div className="right-text">
-                <p>FREE</p>
-                <p>0</p>
+                <p className="free">FREE</p>
+                <p className="price">{formatPrice(0)}</p>
               </div>
             </div>
           <button>CONTINUE SHOPPING</button>

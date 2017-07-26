@@ -1,4 +1,7 @@
-$translucent-background: rgba(33, 56, 117, 0.90);
+$translucent-background: rgba(33, 56, 117, 0.85);
+$main-blue: #213875;
+$hover-color: #dcf6da;
+
 
 .basket-container {
   position: fixed;
@@ -8,6 +11,7 @@ $translucent-background: rgba(33, 56, 117, 0.90);
   z-index: 6;
   width: 100vw;
   background-color: $translucent-background;
+
     
     div {
       right: 0;
@@ -32,8 +36,13 @@ $translucent-background: rgba(33, 56, 117, 0.90);
             height: 70%;
             width: 100%;
             overflow: scroll;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start !important;
+
             
           }
+
 
           .summary-checkout-container {
             padding: 10px;
@@ -42,7 +51,8 @@ $translucent-background: rgba(33, 56, 117, 0.90);
             width: 100%;
             display:flex; 
             flex-flow: column;
-            justify-content: space-between;
+            justify-content: flex-end;
+            border: none;
 
             .text-summary-container{
               width: 100%;
@@ -50,7 +60,13 @@ $translucent-background: rgba(33, 56, 117, 0.90);
               display: flex;
               flex-direction: row;
               flex-wrap: wrap;
-              position: static; 
+              position: relative; 
+              justify-content: flex-end;
+              border: none;
+              align-items: flex-end;
+              padding-bottom: 15px;
+
+
 
               .left-text {
                 height: 100%;
@@ -58,6 +74,29 @@ $translucent-background: rgba(33, 56, 117, 0.90);
                 width: 50%;
                 display: flex;
                 flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-start;
+                border: none;
+                // margin-left: 10%;
+
+                p{
+                  margin-left: 10%;
+
+                  &.shipping{
+                    font-weight:300;
+                    margin-bottom: 4px;
+
+                  }
+
+                  &.total{
+
+                    font-weight:700;
+                    font-size:26px;
+                  }
+
+                }
+
+
               }
               .right-text {
                 height: 100%;
@@ -65,15 +104,51 @@ $translucent-background: rgba(33, 56, 117, 0.90);
                 width: 50%;
                 display: flex;
                 flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-end;
+                border: none;
+                // margin-right: 10px;
+
+                p{
+                  margin-right: 10%;
+
+                  &.free{
+                    font-weight:300;
+                    margin-bottom: 4px;
+
+
+                  }
+
+                  &.price{
+                    font-weight:500;
+                    font-size:20px;
+                  }
+
+                }
+
+
               }
             }
+            
 
             button {
               position: relative;
               align-items: flex-start;
-              margin-bottom: 50px;
-              width: 90%;
+              margin-bottom: 10px;
+              width: 93%;
               height: 49px;
+              background-color: $main-blue;
+              border: none;
+              color: white;
+              font-size: 16px;
+              font-weight: 500;
+
+              &:hover {
+              background-color: $hover-color;
+              color: $main-blue;
+
+              }
+
             }
 
           }

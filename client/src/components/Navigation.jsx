@@ -44,9 +44,9 @@ class Navigation extends React.Component {
   loginButton() {
     if (this.props.user) {
       console.log('user is validated')
-      return (<Link to="/profile"><li className="login">{this.props.user.first_name}</li></Link>)
+      return (<Link to="/profile" className="login"><li>{this.props.user.first_name}</li></Link>)
     } else {
-      return (<Link to="/login"><li className="login">Login</li></Link>)
+      return (<Link to="/login" className="login"><li>Login</li></Link>)
     }
   }
 
