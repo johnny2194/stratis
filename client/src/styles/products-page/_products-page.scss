@@ -1,4 +1,7 @@
-$board-color: #dcf6da;
+
+$background-white: #f6f6f6;
+$border: solid 1px #dee1ea;
+$main-blue: #213875;
 
 
 .products-page {
@@ -15,7 +18,8 @@ $board-color: #dcf6da;
 		.filter-bar {
 			width: 30%;
 			min-height: 100vh;
-			background-color:  $board-color;
+			background-color: $background-white;
+			border-right: $border;
 
 		}
 
@@ -23,7 +27,7 @@ $board-color: #dcf6da;
 			padding: 40px;
 			width: 75%;
 			min-height: 100vh;
-			// background-color: green;
+			background-color: $background-white;
 			display: flex;
 			flex-flow: row wrap;
 			justify-content: space-around;
@@ -36,9 +40,15 @@ $board-color: #dcf6da;
 				align-items: center;
 				width: 32%;
 				height: 400px;
-				// background-color: blue;
+				background-color: $background-white;
 				margin: {
 					bottom: 30px;
+				}
+
+				&.products-links {
+					
+					text-decoration: none;
+					color: #213875;
 				}
 
 				h3 {
@@ -47,6 +57,7 @@ $board-color: #dcf6da;
 
 				img {
 					width: 95%;
+					max-height: 20%;
 				}
 			}
 		}
