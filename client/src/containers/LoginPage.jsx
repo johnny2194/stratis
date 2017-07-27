@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import * as actionCreators from '../actions/authActionCreators'
@@ -54,7 +55,9 @@ class LoginPage extends React.Component {
 						</div>
 
 					</div>
-					<div className="signup-container"></div>
+					<div className="signup-container">
+						<Link to="/signup"><h2>Register</h2></Link>
+					</div>
 				</div>
 			</div>
 		)

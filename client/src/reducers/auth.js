@@ -14,12 +14,18 @@ function auth(state = [], action) {
       return Object.assign({}, state, { fetching: true, error: action.payload })
     case 'LOGIN_POST_FULFILLED':
       return Object.assign({}, state, { fetching: false, fetched: true, user: action.payload.data })
+    case 'LOGOUT_POST_PENDING':
+      return Object.assign({}, state, { fetching: true })
+    case 'LOGOUT_POST_REJECTED':
+      return Object.assign({}, state, { fetching: true, error: action.payload })
+    case 'LOGOUT_POST_FULFILLED':
+      return Object.assign({}, state, { fetching: false, fetched: true, user: action.payload.data })
     case 'CHECK_VALIDATION_PENDING':
       return Object.assign({}, state, { fetching: true })
     case 'CHECK_VALIDATION_REJECTED':
       return Object.assign({}, state, { fetching: true, error: action.payload })
     case 'CHECK_VALIDATION_FULFILLED':
-      return Object.assign({}, state, { fetching: false, fetched: true, user: action.payload.data })  
+      return Object.assign({}, state, { fetching: false, fetched: true, user: null })  
     default:
       return state
   }

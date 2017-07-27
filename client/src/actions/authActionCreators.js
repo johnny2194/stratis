@@ -14,6 +14,13 @@ export function login(loginDetails) {
 	}
 }
 
+export function logout() {
+	return {
+		type: 'LOGOUT_POST',
+		payload: axios.get('http://localhost:3000/logout')
+	}
+}
+
 export function checkValidation() {
 	return {
 		type: 'CHECK_VALIDATION',

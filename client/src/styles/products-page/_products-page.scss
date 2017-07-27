@@ -1,3 +1,5 @@
+$board-color: #dcf6da;
+
 
 .products-page {
 	width: 100%;
@@ -8,11 +10,12 @@
 		display: flex;
 		flex-flow: row no-wrap;
 		padding-top: 59px;
+		// background-color:  $board-color;
 
 		.filter-bar {
 			width: 30%;
 			min-height: 100vh;
-			background-color: red;
+			background-color:  $board-color;
 
 		}
 
@@ -20,7 +23,7 @@
 			padding: 40px;
 			width: 75%;
 			min-height: 100vh;
-			background-color: green;
+			// background-color: green;
 			display: flex;
 			flex-flow: row wrap;
 			justify-content: space-around;
@@ -33,7 +36,7 @@
 				align-items: center;
 				width: 32%;
 				height: 400px;
-				background-color: blue;
+				// background-color: blue;
 				margin: {
 					bottom: 30px;
 				}
