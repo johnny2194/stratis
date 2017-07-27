@@ -23,8 +23,13 @@ class ProfilePage extends React.Component {
 	render() {
 		return (
 			<div className="profile-page">
-				<Navigation styling="navigation navigation-invert" />
-				<h1>PROFILE PAGE!!!!!</h1>
+      	<Navigation styling="navigation navigation-invert"/>
+      	<div className="profile-container">
+	      	<div className="profile-menu-bar">
+						<button onClick={this.props.logout}>Log out</button>
+	      	</div>
+	      	<div className="profile-details-container"></div>
+      	</div>
       </div>
 		)
 	}

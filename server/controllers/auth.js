@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
 	logout(req, res) {
-    req.session.destroy((err) => res.redirect('/')); 
+    req.session.destroy((err) => res.send(null)); 
 	},
 	returnUser(req, res) {
 		res.send(req.user)

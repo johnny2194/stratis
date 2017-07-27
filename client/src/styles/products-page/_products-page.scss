@@ -1,3 +1,4 @@
+
 $background-white: #f6f6f6;
 $border: solid 1px #dee1ea;
 $main-blue: #213875;
@@ -12,6 +13,7 @@ $main-blue: #213875;
 		display: flex;
 		flex-flow: row no-wrap;
 		padding-top: 59px;
+		// background-color:  $board-color;
 
 		.filter-bar {
 			width: 30%;
