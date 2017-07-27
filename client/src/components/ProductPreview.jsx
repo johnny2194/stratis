@@ -6,11 +6,11 @@ class ProductPreview extends React.Component {
 		const {product, stock_details} = this.props
 		return (
 			<div className="product-preview">
-				<Link to={`/product-view?id=${product.id}`}>
-					<h3>{product.name}</h3>
+				<Link className="products-links"to={`/product-view?id=${product.id}`}>
+					<img src={stock_details[0].image} alt={product.name} />
 				</Link>
 				<Link to={`/product-view?id=${product.id}`}>
-					<img src={stock_details[0].image} alt={product.name} />
+					<h3>{product.name}</h3>
 				</Link>
 			</div>
 		)
